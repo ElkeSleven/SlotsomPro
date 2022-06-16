@@ -3,8 +3,7 @@
 
 
 let classLibraryIndex = '';
-let main = document.createElement('main')
-document.body.appendChild(main);
+
 
 renderClassLibrary();
 function renderClassLibrary(){
@@ -17,14 +16,14 @@ function renderClassLibrary(){
     lijstclassLibrary.forEach(namespace =>{
         classLibraryIndex +=
             `
+<div class="namespace">
         <p>${namespace.namespaces}</p>     
-        <p>${namespace.beschrijving}</p>     
-    
+        <p>${namespace.beschrijving}</p>  
+</div>
+       
        `
-
-
     })
-
     classLibrary.innerHTML =  classLibraryIndex;
-
 }
+
+

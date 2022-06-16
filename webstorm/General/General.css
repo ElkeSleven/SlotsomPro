@@ -5,7 +5,22 @@
     padding: 0;
 }
 
+main{
+    display: grid;
+    grid-template-columns: repeat(1, min-content auto);
+}
+
 aside{
     border-right: 2px solid;
     padding: 1rem 1.5rem 2.5rem 0;
+    margin: 10px 0 0 1.25rem;
+    width: max-content;
+
+}
+
+
+header{
+    min-height: 5rem;
+    background-color: midnightblue;
+
 }

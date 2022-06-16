@@ -1,0 +1,21 @@
+.classLibraryGroup{
+ padding: .75rem;
+}
+.namespace{
+    border-bottom: 2px solid dimgray;
+    padding: .5rem 1rem;
+
+}
+.namespace p+p{
+    margin: .25rem 0 0 0 ;
+}
+.namespace p:first-child{
+    color: darkred;
+    font-weight: bold;
+    font-size: 1.35rem;
+}
+.namespace p:not(first-child){
+    color: black;
+    font-size: 1.25rem;
+    max-width: 60ch;
+}

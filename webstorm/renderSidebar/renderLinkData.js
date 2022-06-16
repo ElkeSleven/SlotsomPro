@@ -4,7 +4,7 @@
 let innderHtmlChannels = '';
 let innderHtmlLinks = '';
 let aside = document.createElement('aside')
-document.body.appendChild(aside);
+main.appendChild(aside);
 
 renderAwesomeLinks()
 function renderAwesomeLinks(){
