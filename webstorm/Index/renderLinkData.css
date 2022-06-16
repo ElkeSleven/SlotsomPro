@@ -1,0 +1,30 @@
+
+aside{
+    margin: 10px 1.25rem;
+    width: max-content;
+}
+
+.linkGroup{
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    font-size: 1.25rem;
+}
+.linkGroup a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: dodgerblue;
+
+}
+.linkGroup a:hover {
+    text-decoration: none;
+    color: blue;
+
+}
+
+.linkGroup + .linkGroup{
+    padding-top: 2rem;
+}
+
+

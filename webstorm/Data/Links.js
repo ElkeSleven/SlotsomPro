@@ -2,13 +2,13 @@
 
 const awesomeLinks = [
     {
-        'naam': 'FANCY-BORDER-RADIUS',
+        'naam': 'fancy-border-radius',
         'omschrijving': 'maak custom css figuren',
         'url': "https://9elements.github.io/fancy-border-radius/",
         'reference': ['CSS', 'border-radius','Blob','Cirkel', 'Cirkel','Figuur','Figuren', 'Shape' ]
     },
     {
-        'naam': 'csv-json',
+        'naam': 'CSV-JSON',
         'omschrijving': 'zet csv naar json of json naar csv',
         'url': "https://csvjson.com/",
         'reference': ['CSS', 'JSON', ]
@@ -20,7 +20,7 @@ const awesomeLinks = [
         'reference': ['CSS', 'GAME', 'Test', 'FUN']
     },
     {
-        'naam': 'Generate SVG design assets',
+        'naam': 'SVG assets designer ',
         'omschrijving': 'Generate unique SVG design assets',
         'url': "https://haikei.app/",
         'reference': ['CSS', 'Wave', 'Background', 'Blob', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
