@@ -85,8 +85,8 @@ const codeSnippers =  [
             {
                 "snipper_id": 3,
                 "snipper": "let zin = 'Dit is een zin'" +
-                    "<br>zin.indexOf(\" \", 1);   // zegt op welke index de EERSTE specie staat" +
-                    "<br>zin.indexOf(\"is\", 1);   // zegt op welke index de EERSTE 'is' staat"
+                    "<br>zin.indexOf(\" \", 1);   // zegt op welke viewClassLibraryCsharp de EERSTE specie staat" +
+                    "<br>zin.indexOf(\"is\", 1);   // zegt op welke viewClassLibraryCsharp de EERSTE 'is' staat"
             },
             {
                 "snipper_id": 4,
