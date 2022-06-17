@@ -4,10 +4,16 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: grid;
+    grid-template-areas: 'h h' 'a m';
+    grid-template-rows: min-content auto ;
+    grid-template-columns: min-content auto ;
+}
 
 main{
-    display: grid;
-    grid-template-columns: repeat(1, min-content auto);
+   grid-area: m;
+
 }
 
 aside{
@@ -15,12 +21,12 @@ aside{
     padding: 1rem 1.5rem 2.5rem 0;
     margin: 10px 0 0 1.25rem;
     width: max-content;
-
+    grid-area: a;
 }
 
 
 header{
     min-height: 5rem;
     background-color: midnightblue;
-
+    grid-area: h;
 }

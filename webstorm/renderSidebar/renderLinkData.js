@@ -1,27 +1,25 @@
 
 
 
-let innderHtmlChannels = '';
-let innderHtmlLinks = '';
-let aside = document.createElement('aside')
-main.appendChild(aside);
+let innderHtmlLinksAside = '';
+
 
 renderAwesomeLinks()
 function renderAwesomeLinks(){
 
     let linkGroup = document.createElement('div')
-    linkGroup.innerHTML = innderHtmlLinks;
+    linkGroup.innerHTML = innderHtmlLinksAside;
     linkGroup.classList.add('linkGroup')
     aside.appendChild(linkGroup);
 
     viewlinks.forEach(link =>{
-        innderHtmlLinks +=
+        innderHtmlLinksAside +=
             `
         <a href="${link.href}" target="_blank">${link.naam}</a>      
        `
     })
 
-    linkGroup.innerHTML = 'View Links' + innderHtmlLinks;
+    linkGroup.innerHTML = 'View Links' + innderHtmlLinksAside;
 
 }
 
