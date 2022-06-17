@@ -3,11 +3,12 @@
 //https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07
 
 
-const microsoft_dotnet = [
+const goeieLinks = [
     {
+        name: 'microsoft_dotnet',
         beschrijving: 'microsoft website voor het leren van dotnet',
         url: 'https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07',
-        reference:['dotnet', 'Csharp' ],
+        reference: ['dotnet', 'Csharp' ],
     }
 ];
 const uilegWoorden = [
@@ -17,8 +18,6 @@ const uilegWoorden = [
     },
 
 ]
-
-
 const belangerijksteDataTypes = [
     {"type" : 'string' , "uitleg" : 'Testinformatie' , 'Convertfuncties': 'Convert.ToString(...)'},
     {"type" : 'char' , "uitleg" : 'één karakter', 'Convertfuncties': 'Convert.ToChar(...)'},
@@ -51,18 +50,21 @@ const domiDataTypes = {
                 omschrijving: 'geheel getal',
                 groteBytes: 4,
                 groteBit: 32,
-                groteVisueel: '',
-                voorbeeld: ``,
-                convertfuncties: ''
+                groteVisueel: '10 getallen (-2’147’483’648 tot 2’147’483’647)',
+                voorbeeld: `int myNum = 100000;`,
+                convertfuncties: '.ToInt32',
+                parseMethod: 'int.'
             },
             {
                 type: 'long',
-                omschrijving: 'geheel getal',
+                omschrijving: 'geheel getal ',
                 groteBytes: 8,
                 groteBit: 64,
-                groteVisueel: '',
-                voorbeeld: ``,
-                convertfuncties: ''
+                groteVisueel: '19 getallen (-9’223’372’036’854’775’808 tot 9’223’372’036’854’775’807)',
+                voorbeeld: `long myNum = 15000000000L  //er moet een L achter staan`,
+                convertfuncties: '.ToInt64',
+                parseMethod: 'long.'
+
             }
         ],
         kommagetallen: [
@@ -71,69 +73,80 @@ const domiDataTypes = {
                 omschrijving: 'komma getal',
                 groteBytes: 4,
                 groteBit: 32,
-                groteVisueel: '',
-                voorbeeld: ``,
-                convertfuncties: ''
+                groteVisueel: 'max 7 getalen voor + na komma ',
+                voorbeeld: `float myNum = 5.75f;  //moet altijd een F/f achter het getal`,
+                convertfuncties: '',
+                parseMethod: 'float.'
             },
             {
                 type: 'double',
                 omschrijving: 'komma getal',
                 groteBytes: 8,
                 groteBit: 64,
-                groteVisueel: '',
-                voorbeeld: ``,
-                convertfuncties: ''
+                groteVisueel: 'max 15 getalen voor + na komma',
+                voorbeeld: `double myNum = 19.99;  //er mag een D achter het getal staan`,
+                convertfuncties: '.ToDouble',
+                parseMethod: 'double.'
             },
             {
                 type: 'decimal',
                 omschrijving: 'meestal voor currency (geld)',
                 groteBytes: 16,
                 groteBit: 128,
-                groteVisueel: '',
-                voorbeeld: ``,
-                convertfuncties: ''
+                groteVisueel: '28-29 getalen voor + na komma',
+                voorbeeld: `decimal myNum = 19.99M;   // er moet een M achter staan`,
+                convertfuncties: '.ToDecimal',
+                parseMethod: 'decimal.'
             },
             {
                 type: 'NOTE',
                 omschrijving: 'Een komma getal kan ook een wetenschappelijk getal zijn met een "e"/”E” om de macht van 10 aan te geven',
-                voorbeeld: ``,
+                groteBytes: '',
+                groteBit: '',
+                groteVisueel: '',
+                voorbeeld: `float f1 = 35e3F;   double d1 = 12E4D; `,
+                convertfuncties: '',
+                parseMethod: ''
             },
         ],
-        true_false: [
+        truefalse: [
             {
                 type: 'bool',
                 omschrijving: 'kan alleen de waarden true of false hebben',
                 groteBytes: 0.125,
                 groteBit: 1,
                 groteVisueel: '',
-                voorbeeld: ``,
-                convertfuncties: ''
+                voorbeeld: `bool isCSharpFun = true;`,
+                convertfuncties: '.ToBoolean',
+                parseMethod: ''
             },
         ],
         Karakters:[
             {
                 type: 'char',
-                omschrijving: 'één karakter, één letter, één getal',
+                omschrijving: 'één karakter, één letter, één getal zoals \'A\' , \'7\' of \'@\'',
                 groteBytes: 2,
                 groteBit: 16,
                 groteVisueel: '',
-                voorbeeld: ``,
-                convertfuncties: ''
+                voorbeeld: `char myGrade = 'B';`,
+                convertfuncties: '.ToChar',
+                parseMethod: ''
             },
             {
                 type: 'string',
                 omschrijving: 'tekst',
                 groteBytes: 2,
                 groteBit: 16,
-                groteVisueel: ' ',
-                voorbeeld: ``,
-                convertfuncties: ''
-            },
+                groteVisueel: '',
+                voorbeeld: `string greeting = "Hello World";`,
+                convertfuncties: '.ToSingle',
+                parseMethod: ''
+            }
         ]};
 const domiViewdate_time = {
             title: 'Date en Time ',
             namespaces: 'System',
-            declareren: 'DateTime naamVariabelen = DateTime.Now;  TxtNaam.Text = Convert.ToString(naamVariabelen);',
+            declareren: 'DateTime naamVariabelen = DateTime.Now; <br> TxtNaam.Text = Convert.ToString(naamVariabelen);',
             decDateTime :[
                 {code: 'DateTime.Today', uitput: '8/11/2021 0:00:00'},
                 {code: 'DateTime.Now', uitput: '8/11/2021 17:30:45'},
@@ -263,5 +276,5 @@ const methods = [
 
 
 //what a class is ¯\_(ツ)_/¯
-// primitive types, oop, methods, loops
-// syntax,  classes, methods...
+//  oop,
+// syntax,  classes,
