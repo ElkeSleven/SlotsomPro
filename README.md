@@ -1,13 +1,18 @@
-# Omigosh
+# SlotsomPro
 
+
+
+
+
+
+#IDEE
 
 WEB  (portfolio) 
 - front-page ( spons die kennes opslurpt )
-- logo omigosh
 - about me , github-link , mijn projecten 
 - bib via JS  met sammenvattingen 
 - sorteren op 1proSem1 , 1proSem2 , ... 
-- sorteren via keywords? 
+- sorteren via keywords
 - verdelen in JS, CSS , C# , ... 
 
 - vue , fetch ,
