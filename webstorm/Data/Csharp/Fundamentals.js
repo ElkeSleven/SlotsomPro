@@ -9,8 +9,14 @@ const microsoft_dotnet = [
         url: 'https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07',
         reference:['dotnet', 'Csharp' ],
     }
-]
+];
+const uilegWoorden = [
+    {
+        name: 'Initialiseren: ',
+        uileg: 'is een opslagmedium voorbereiden voor nieuwe gegevens',
+    },
 
+]
 
 
 const belangerijksteDataTypes = [
@@ -23,7 +29,7 @@ const belangerijksteDataTypes = [
 
     {"type" : 'datatype[]' , "uitleg" : 'array van datatype\'s'},
     {"type" : 'list<\'datatype>' , "uitleg" : 'list van datatype\'s'},
-]
+];
 const listVSarray = [
     {'list<\'datatype>' : {
             Length:'Length varies',
@@ -37,10 +43,8 @@ const listVSarray = [
             Resize:'Resizing arrays is expensive',
         },
     },
-]
-
-const domiDataTypes = [{
-    domiDataTypes: {
+];
+const domiDataTypes = {
         getallen: [
             {
                 type: 'int',
@@ -49,6 +53,7 @@ const domiDataTypes = [{
                 groteBit: 32,
                 groteVisueel: '',
                 voorbeeld: ``,
+                convertfuncties: ''
             },
             {
                 type: 'long',
@@ -57,6 +62,7 @@ const domiDataTypes = [{
                 groteBit: 64,
                 groteVisueel: '',
                 voorbeeld: ``,
+                convertfuncties: ''
             }
         ],
         kommagetallen: [
@@ -67,6 +73,7 @@ const domiDataTypes = [{
                 groteBit: 32,
                 groteVisueel: '',
                 voorbeeld: ``,
+                convertfuncties: ''
             },
             {
                 type: 'double',
@@ -75,6 +82,7 @@ const domiDataTypes = [{
                 groteBit: 64,
                 groteVisueel: '',
                 voorbeeld: ``,
+                convertfuncties: ''
             },
             {
                 type: 'decimal',
@@ -83,6 +91,7 @@ const domiDataTypes = [{
                 groteBit: 128,
                 groteVisueel: '',
                 voorbeeld: ``,
+                convertfuncties: ''
             },
             {
                 type: 'NOTE',
@@ -98,6 +107,7 @@ const domiDataTypes = [{
                 groteBit: 1,
                 groteVisueel: '',
                 voorbeeld: ``,
+                convertfuncties: ''
             },
         ],
         Karakters:[
@@ -108,6 +118,7 @@ const domiDataTypes = [{
                 groteBit: 16,
                 groteVisueel: '',
                 voorbeeld: ``,
+                convertfuncties: ''
             },
             {
                 type: 'string',
@@ -116,28 +127,141 @@ const domiDataTypes = [{
                 groteBit: 16,
                 groteVisueel: ' ',
                 voorbeeld: ``,
+                convertfuncties: ''
+            },
+        ]};
+const domiViewdate_time = {
+            title: 'Date en Time ',
+            namespaces: 'System',
+            declareren: 'DateTime naamVariabelen = DateTime.Now;  TxtNaam.Text = Convert.ToString(naamVariabelen);',
+            decDateTime :[
+                {code: 'DateTime.Today', uitput: '8/11/2021 0:00:00'},
+                {code: 'DateTime.Now', uitput: '8/11/2021 17:30:45'},
+                {code: 'new DateTime(yyyy, m, d, u, min, sec)', uitput: ''},
+            ],
+            outDateTime : [
+                {code: '.ToShortDateString', uitput: '8/11/2021' },
+                {code: '.ToLongDateString', uitput: 'maandag 8 november 2021' },
+                {code: '.ToShortTimeString', uitput: '17:24' },
+                {code: '.ToLongTimeString', uitput: '17:24:58' },
+                {code: '.Date', uitput: '8/11/2021 0:00:00' },
+                {code: '.Day', uitput: '8' },
+                {code: '.TimeOfDay', uitput: '17/30/455040363' },
+                {code: '.DayOfWeek', uitput: 'Mondey' },
+                {code: '.DayOfYear', uitput: '312' },
+
+            ],};
+const statemens = [
+    {
+        name : 'if-statement ',
+        gebruik: 'De if-statement: om een blok C#-code op te geven dat moet worden uitgevoerd als de voorwaarde True is.',
+        syntax: ['if (condition)', '{','// block of code to be executed if the condition is True', '}',],
+    }
+    ,
+    {
+        name : 'else-statement ',
+        gebruik: 'De else-statement: om een C#-code op te geven dat moet worden uitgevoerd als de voorwaarde False is.',
+        syntax: ['if (condition)', '{','// block of code to be executed if the condition is True', '}','else','{','// block of code to be executed if the condition is False','}',],
+    }
+    ,
+    {
+        name : 'else if-statement ',
+        gebruik: 'De else if-statement: om een nieuwe voorwaarde op te geven als de eerste 2 voorwaarde False zijn',
+        syntax: ['if (condition1)', '{', '// block of code to be executed if condition1 is True', '}',
+            'else if (condition2)', '{', '// block of code to be executed if condition1 is False and condition2 is True', '}',
+            'else', '{','// block of code to be executed if condition1 is False and condition2 is False','}',],
+    }
+    ,
+    {
+        name : 'switch-statement ',
+        gebruik: 'C# Switch-statements: om een van de vele codeblokken te selecteren die moeten worden uitgevoerd.',
+        syntax: ['switch(expression)',
+        '{', 'case x', '// code block', 'break;', 'case y:',
+        '// code block','break;','default: //The default keyword is optional and specifies some code to run if  there is no case match',
+        '// code block', 'break;', '}',],
+    }
+];
+const loops = [
+    {
+        name : 'for-loop ',
+        gebruik: 'De for-loop: vaste hoeveelheid herhalingen ',
+        syntax: ['for (statement 1; statement 2; statement 3)', '{', '// code block to be executed', '}',],
+        uitlegSyntax: [
+            {
+                name:'Statement 1:',
+                beschrijving:'wordt (eenmalig) uitgevoerd voordat het codeblok wordt uitgevoerd.'
+            },
+            {
+                name:'Statement 2:',
+                beschrijving:'definieert de voorwaarde voor het uitvoeren van het codeblok.'
+            },
+            {
+                name:'Statement 3:',
+                beschrijving:'wordt (iedere keer) uitgevoerd nadat het codeblok is uitgevoerd.'
             },
         ]
+    },
+    {
+        name : 'while-loop ',
+        gebruik: 'De while-loop: herhalen onder voorwaarde ',
+        syntax: ['while (condition)','{','// code block to be executed','}'],
+    },
+    {
+        name : 'do while-loop ',
+        gebruik: 'De do while-loop: herhalen onder voorwaarde, maar eerst uitvoeren dan controleren',
+        syntax: ['do','{','// code block to be executed','}','while (condition)'],
     }
-
-
-}]
-
-
-
-
-const dataTypeDateTime = [
-
+];
+const methods = [
+    {VolegordeVanBewerking: [
+            {
+                title: 'private: privé',
+                uitleg : 'kan alleen worden gebruikt binnen de class waar het deel van uitmaakt.'
+            },
+            {
+                title: 'public: openbaar',
+                uitleg : 'overal toegankelijk kan worden opgeroepen vanuit een andere class'
+            },
+            {
+                title: 'Static',
+                uitleg : 'static methodes kunnen enkel door andere static methodes worden opgeroepen'
+            },
+            {
+                title:'Void', uitleg: 'geeft geen waarde terug'},
+            {
+                title:'method met return value' ,
+                uitleg:'geeft waarde terug dit kan int , string , dubbel ,… zijn'
+            },
+            {
+                title:'naam van de method ',
+                uitleg:'nodig om de method op te roepen / gebruiken'
+            },
+            {
+                title: 'parameters (type naamVariabele)',
+                uitleg: 'meegegeven variabelen, kunnen meerderen zijn gescheiden door een komma'
+            }
+        ]},
+    {syntaxVoorbeeld: [
+                'namespace ConsoleApp_met_method  // naam van project ', '{',
+                'class Program', '{', '// main method is de hoofd method',
+                '// hier begint de code',
+                'static void Main(string[] args)', '{',
+                '// vraag gebruiker om naam',
+                'Console.WriteLine("geef je naam");',
+                '// call the method',
+                'SayHi(Console.ReadLine());',
+                'Console.ReadLine();', '}', '// method SayHi',
+                'private static void SayHi(string name)', '{', 'Console.WriteLine("Hallo " + name);', '}', '}', '}'
+            ]},
+    {Main_methode:'is het beginpunt van een C#-toepassing. Wanneer de toepassing wordt gestart, is de methode Main de eerste methode die wordt uitgevoerd. Er kan maar één Main-methode in C# zijn. De C# Main-methode kan echter van het type void of int,string,… zijn.'}
 ]
 
-const loop_for = []
-const loop_while = []
-const loop_do = []
-const loop_forEach = []
-const check_if = []
-const check_switch = []
+
+
+
+
+
 
 //what a class is ¯\_(ツ)_/¯
 // primitive types, oop, methods, loops
-//probably variables and types.
-// syntax, variables, types, classes, methods...
+// syntax,  classes, methods...
