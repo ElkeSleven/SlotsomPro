@@ -7,7 +7,7 @@ window.onload = function (){
     renderGoeideLinks();
     renderDataTypes();
     renderDateTime();
-
+    renderStatemens();
     render();
 }
 function renderDataTypes(){
@@ -97,8 +97,28 @@ function renderGoeideLinks(){
         return x + `</div> `
     }
 }
+function  renderStatemens(){
+    statemens.forEach(sta =>{
+        index +=`
+       <h4>${sta.name}</h4>
+        <p>${sta.gebruik}</p>`
+        + makeSyntax(sta)
+    })
+}
+function makeSyntax(ste){
+    let x = '';
+    ste.syntax.forEach(e =>{
+        let i = e.toString()
+        if(!i.search('//')){
+            x +=`<p class="comment">${e}</p>`
+        }
+        else{
+            x +=`<p>${e}</p>`
+        }
 
-
+    })
+    return x
+}
 
 
 function render(){
