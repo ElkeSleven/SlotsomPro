@@ -37,19 +37,21 @@ function renderDataTypes(){
         }
 
 
+
         return `
 <div class="dataType">
+<div class="dataType--inner">
 <div class="dataType__oms">
 <div>${e.type}: ${e.omschrijving} </div>
 <div>Bytes:${e.groteBytes}  |  Bit:${e.groteBit}</div>
-<div>${e.groteVisueel} </div>
 </div>
 <div class="dataType__vb">
+<div>${e.groteVisueel}</div>
 <div>${e.voorbeeld}</div>
 <div>${convert}</div> 
 <div>${parse}</div>
 </div>
-</div>
+</div></div>
 
  
          
@@ -61,7 +63,7 @@ function renderDateTime(){
         `
         <h3>${domiViewdate_time.title}</h3>
         <p>namespace: ${domiViewdate_time.namespaces}</p>
-        <div class="code setPadding">
+        <div class="">
           <p>${domiViewdate_time.declareren}</p>
        </div>
         `
@@ -73,10 +75,10 @@ function renderDateTime(){
         index +=  makeCodeVar(e)
     })
     function makeCode(e){
-        return `<div class="code code--hor"><div class="code--inner"><p class="row-hor-split2">Console.WriteLine(${e.code})</p> <p class="row-hor-split2 comment"> // output: ${e.uitput}</p></div></div>`
+        return `<div class="disFlex"><p class="">Console.WriteLine(${e.code})</p> <p class=" comment">// output: ${e.uitput}</p></div>`
     }
     function makeCodeVar(e){
-        return `<div class="code code--hor"><div class="code--inner"><p class="row-hor-split2">Console.WriteLine(DateTime.Now.${e.code})</p> <p class="row-hor-split2 comment"> // output: ${e.uitput}</p></div></div>`
+        return `<div class="disFlex"><p>Console.WriteLine(DateTime.Now.${e.code})</p> <p class=" comment">// output: ${e.uitput}</p></div>`
     }
 }
 function renderGoeideLinks(){

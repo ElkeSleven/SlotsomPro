@@ -98,7 +98,7 @@ const domiDataTypes = {
                 convertfuncties: '.ToDecimal',
                 parseMethod: 'decimal.'
             },
-            {
+          /*  {
                 type: 'NOTE',
                 omschrijving: 'Een komma getal kan ook een wetenschappelijk getal zijn met een "e"/”E” om de macht van 10 aan te geven',
                 groteBytes: '',
@@ -107,7 +107,7 @@ const domiDataTypes = {
                 voorbeeld: `float f1 = 35e3F;   double d1 = 12E4D; `,
                 convertfuncties: '',
                 parseMethod: ''
-            },
+            },*/
         ],
         truefalse: [
             {
