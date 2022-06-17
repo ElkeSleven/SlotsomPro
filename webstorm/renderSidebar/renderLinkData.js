@@ -14,30 +14,16 @@ function renderAwesomeLinks(){
     linkGroup.classList.add('linkGroup')
     aside.appendChild(linkGroup);
 
-    awesomeLinks.forEach(link =>{
+    viewlinks.forEach(link =>{
         innderHtmlLinks +=
             `
-        <a href="${link.url}" target="_blank">${link.naam}</a>      
+        <a href="${link.href}" target="_blank">${link.naam}</a>      
        `
-
-
     })
 
-    linkGroup.innerHTML = 'Awesome Links' + innderHtmlLinks;
+    linkGroup.innerHTML = 'View Links' + innderHtmlLinks;
 
 }
 
 
-renderYouTubeChannels();
-function renderYouTubeChannels(){
-    awesomeYouTubeChannels.forEach(channel => {
-        innderHtmlChannels +=
-            `
-        <a href="${channel.url}" target="_blank">${channel.naam}</a>      
-       `
-    })
-   let channelGroup = document.createElement('div')
-    channelGroup.innerHTML = 'Awesome YT-Channels' + innderHtmlChannels;
-    channelGroup.classList.add('linkGroup')
-    aside.appendChild(channelGroup);
-}
+

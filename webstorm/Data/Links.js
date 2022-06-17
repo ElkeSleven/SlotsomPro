@@ -31,6 +31,13 @@ const awesomeLinks = [
         'url': "https://www.shapedivider.app/",
         'reference': ['CSS', 'Wave', 'Dividers', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
     },
+    {
+        'naam': 'microsoft lean platform',
+        'omschrijving': 'leer modules van microsoft ',
+        'url': "https://docs.microsoft.com/en-us/learn/browse/",
+        'reference': ['Csharp', 'dotnet', 'GitHub', 'azure', 'Shape', 'SQL','msSQL', 'Data Analyst'
+        ,'Developer', 'DevOps','Visual Studio','.NET','Entity Framework', '.NET Core']
+    },
 ]
 
 const awesomeYouTubeChannels = [
@@ -82,12 +89,28 @@ const awesomeYouTubeChannels = [
         'url': "https://www.youtube.com/c/MooICT",
         'reference': ['Csharp']
     },
+    {
+        'naam': 'dotNET',
+        'omschrijving': '',
+        'url': "https://www.youtube.com/c/dotNET",
+        'reference': ['Csharp', '.Net']
+    },
 
 ]
 
 const awesomeYouTubeVideos = [
     {
-
+        'naam': 'C# Fundamentals for Beginners',
+        'omschrijving': '8uur uitleg van \'hello world\' tot lists, entities, ...',
+        'url': "https://www.youtube.com/watch?v=0QUgvfuKvWU",
+        'reference': ['Csharp','ConsoleAPP']
     },
+    {
+        'naam': 'CSS units : px , rem , em , vh , vw , ...',
+        'omschrijving': 'uitleg over CSS units',
+        'url': "https://www.youtube.com/watch?v=N5wpD9Ov_To",
+        'reference': ['CSS','CSS units', 'units']
+    },
+
 ]
 

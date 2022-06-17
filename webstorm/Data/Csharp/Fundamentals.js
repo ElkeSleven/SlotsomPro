@@ -1,4 +1,16 @@
 //variabelen
+// link
+//https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07
+
+
+const microsoft_dotnet = [
+    {
+        beschrijving: 'microsoft website voor het leren van dotnet',
+        url: 'https://docs.microsoft.com/en-us/users/dotnet/collections/yz26f8y64n7k07',
+        reference:['dotnet', 'Csharp' ],
+    }
+]
+
 
 
 const belangerijksteDataTypes = [
@@ -27,3 +39,18 @@ const listVSarray = [
     },
 ]
 
+const dataTypeDateTime = [
+
+]
+
+const loop_for = []
+const loop_while = []
+const loop_do = []
+const loop_forEach = []
+const check_if = []
+const check_switch = []
+
+//what a class is ¯\_(ツ)_/¯
+// primitive types, oop, methods, loops
+//probably variables and types.
+// syntax, variables, types, classes, methods...
