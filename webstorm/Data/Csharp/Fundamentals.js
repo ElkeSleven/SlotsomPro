@@ -39,6 +39,93 @@ const listVSarray = [
     },
 ]
 
+const domiDataTypes = [{
+    domiDataTypes: {
+        getallen: [
+            {
+                type: 'int',
+                omschrijving: 'geheel getal',
+                groteBytes: 4,
+                groteBit: 32,
+                groteVisueel: '',
+                voorbeeld: ``,
+            },
+            {
+                type: 'long',
+                omschrijving: 'geheel getal',
+                groteBytes: 8,
+                groteBit: 64,
+                groteVisueel: '',
+                voorbeeld: ``,
+            }
+        ],
+        kommagetallen: [
+            {
+                type: 'float',
+                omschrijving: 'komma getal',
+                groteBytes: 4,
+                groteBit: 32,
+                groteVisueel: '',
+                voorbeeld: ``,
+            },
+            {
+                type: 'double',
+                omschrijving: 'komma getal',
+                groteBytes: 8,
+                groteBit: 64,
+                groteVisueel: '',
+                voorbeeld: ``,
+            },
+            {
+                type: 'decimal',
+                omschrijving: 'meestal voor currency (geld)',
+                groteBytes: 16,
+                groteBit: 128,
+                groteVisueel: '',
+                voorbeeld: ``,
+            },
+            {
+                type: 'NOTE',
+                omschrijving: 'Een komma getal kan ook een wetenschappelijk getal zijn met een "e"/”E” om de macht van 10 aan te geven',
+                voorbeeld: ``,
+            },
+        ],
+        true_false: [
+            {
+                type: 'bool',
+                omschrijving: 'kan alleen de waarden true of false hebben',
+                groteBytes: 0.125,
+                groteBit: 1,
+                groteVisueel: '',
+                voorbeeld: ``,
+            },
+        ],
+        Karakters:[
+            {
+                type: 'char',
+                omschrijving: 'één karakter, één letter, één getal',
+                groteBytes: 2,
+                groteBit: 16,
+                groteVisueel: '',
+                voorbeeld: ``,
+            },
+            {
+                type: 'string',
+                omschrijving: 'tekst',
+                groteBytes: 2,
+                groteBit: 16,
+                groteVisueel: ' ',
+                voorbeeld: ``,
+            },
+        ]
+    }
+
+
+}]
+
+
+
+
 const dataTypeDateTime = [
 
 ]

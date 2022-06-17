@@ -1,9 +1,9 @@
 
 
 
-
+let innerHtmlawesomeYouTubeVideos = `<h3>Awesome YouTube Videos</h3>`;
 let innerHtmlChannels = `<h3>Awesome YT-Channels</h3>`;
-let innerHtmlAwesomeLinks =''
+let innerHtmlAwesomeLinks = `<h3>Awesome Links</h3>`;
 renderYouTubeChannels();
 function renderYouTubeChannels(){
     awesomeYouTubeChannels.forEach(channel => {
@@ -35,4 +35,20 @@ function renderAwesomeLinks(){
     channelGroup.classList.add('aweL')
     main.appendChild(channelGroup);
 }
-
+renderAwesomeYouTubeVideos();
+function renderAwesomeYouTubeVideos(){
+    awesomeYouTubeVideos.forEach(v => {
+        innerHtmlawesomeYouTubeVideos +=
+            `
+<p>${v.naam}</p>
+<p>${v.omschrijving}</p>
+<p>${v.reference}</p>
+        <a class="aweLink aweV" href="${v.url}" target="_blank">${v.naam}</a>      
+       `
+    })
+    let channelGroup = document.createElement('div')
+    channelGroup.innerHTML =  innerHtmlawesomeYouTubeVideos;
+    channelGroup.classList.add('aweLink-box')
+    channelGroup.classList.add('aweV')
+    main.appendChild(channelGroup);
+}

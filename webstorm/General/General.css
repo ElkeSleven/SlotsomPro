@@ -10,12 +10,10 @@ body{
     grid-template-rows: min-content auto ;
     grid-template-columns: min-content auto ;
 }
-
 main{
    grid-area: m;
 
 }
-
 aside{
     border-right: 2px solid;
     padding: 1rem 1.5rem 2.5rem 0;
@@ -23,8 +21,6 @@ aside{
     width: max-content;
     grid-area: a;
 }
-
-
 header{
     min-height: 5rem;
     background-color: midnightblue;
