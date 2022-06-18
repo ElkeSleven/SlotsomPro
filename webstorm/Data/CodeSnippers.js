@@ -5,6 +5,7 @@ const snippers = [{
         ref: ['Csharp','Pro1Sem1','Pro1'],
         timer: {
             reference:['timer','DispatcherTimer','TimeSpan'],
+            uitleg: '',
             wpf: [
                 {
                     comment: '//declareer variable die we nodig hebben',
@@ -34,6 +35,7 @@ const snippers = [{
         },
         windowClosing:{
             reference: ['Window_Closing', 'closing', 'xaml'],
+            uitleg: '',
             wpf: [{
                 comment: '//Window_Closing event',
                 method: 'private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)',
