@@ -5,7 +5,7 @@ const codeSnipers =  [
 
     {
              vak: ['Csharp'],
-            oplSem: ['Pro1Sem1','Pro1'],
+            oplSem: 'Pro1Sem1',
             reference:['timer','DispatcherTimer','TimeSpan', 'Pro1Sem1'],
             explanation: '',
             program: 'WPF',
@@ -29,7 +29,7 @@ const codeSnipers =  [
     },
     {
         vak: ['Csharp'],
-            oplSem: ['Pro1Sem1','Pro1'],
+            oplSem: 'Pro1Sem1',
             reference: ['Window_Closing', 'closing', 'xaml', 'Pro1Sem1'],
             explanation: '',
             comment:'',
@@ -47,7 +47,7 @@ const codeSnipers =  [
     },
     {
             vak: ['Csharp'],
-            oplSem: ['Pro1Sem1','Pro1', ],
+            oplSem: 'Pro1Sem1',
             reference: ['MessageBox', 'Pro1Sem1'],
             explanation: '',
             comment:'',
@@ -59,7 +59,7 @@ const codeSnipers =  [
        },
     {
         vak: ['Csharp'],
-        oplSem: ['Pro1Sem1','Pro1', ],
+        oplSem: 'Pro1Sem1',
         reference: ['MessageBox','MessageBoxResult','Pro1Sem1', 'MessageBoxButton'],
         explanation: '',
         comment:'',
@@ -73,7 +73,7 @@ const codeSnipers =  [
     },
     {
         vak: ['Csharp'],
-        oplSem: ['Pro1Sem1','Pro1', ],
+        oplSem: 'Pro1Sem1',
         reference: ['MessageBox','MessageBoxImage','Pro1Sem1', 'MessageBoxButton'],
         explanation: '',
         comment:'',
@@ -85,6 +85,47 @@ const codeSnipers =  [
             'MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel,  MessageBoxImage.Exclamation);',
             'MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel,  MessageBoxImage.Error);'
         ]
+    },
+    {
+        vak: ['Csharp'],
+        oplSem: 'Pro1Sem2',
+        reference: ['OpenFileDialog','ShowDialog','Pro1Sem2', 'Gebruiker kan file kiezen'],
+        explanation: 'laat de gebruiker een file kiezen ',
+        comment: '',
+        program: 'WPF',
+        code: [ '// declareren van variable die we nodig hebben', 'private string currentFile;' , 'private string currentFolder;',
+            '// laat de gebruiker een folder keizen ', 'private void browseButton_Click(object sender, RoutedEventArgs e)',
+            '{',' currentFolder = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);' , 'OpenFileDialog dialog = new OpenFileDialog();\n' +
+            'dialog.InitialDirectory = currentFolder;', 'if (dialog.ShowDialog() == true)', '{',
+            'currentFile = dialog.FileName;', 'currentFolder = Directory.GetParent(currentFile).ToString();',
+            'fileTextBox.Text = currentFile;', '}', '}',
+
+        ],
+        xamlCode: ["<TextBox HorizontalAlignment=\"Left\" Height=\"23\" Margin=\"77,39,0,0\"",
+            "VerticalAlignment=\"Top\" Width=\"340\"",
+            " Name=\"fileTextBox\" />",
+            " <Button Content=\"...\" HorizontalAlignment=\"Left\"",
+            "Margin=\"422,39,0,0\" VerticalAlignment=\"Top\" Width=\"30\" Height=\"23\"",
+            " Name=\"browseButton\" Click=\"browseButton_Click\"/>"]
+    },
+    {
+        vak: ['Csharp'],
+        oplSem: 'Pro1Sem2',
+        reference: ['OpenFileDialog','ShowDialog','Pro1Sem2', 'Gebruiker kan file kiezen', 'Environment', 'SpecialFolder', 'SaveFileDialog'],
+        explanation: 'open de verkenner op verschillende locaties',
+        comment: '',
+        program: 'WPF',
+        code: [ ' OpenFileDialog dialog = new OpenFileDialog();    // or SaveFileDialog dialog = new SaveFileDialog();',
+            '// open file \'Deze pc\'',
+        'dialog.InitialDirectory = Environment.GetFolderPath( Environment.SpecialFolder.MyComputer);' ,
+            '// open file \'Mijn documenten\'',
+        'dialog.InitialDirectory = Environment.GetFolderPath( Environment.SpecialFolder.MyDocuments);' ,
+            '// open file \'Mijn afbeeldingen\'',
+        'dialog.InitialDirectory = Environment.GetFolderPath( Environment.SpecialFolder.MyPictures);' ,
+            '// open file \'Mijn muziek\'',
+        'dialog.InitialDirectory = Environment.GetFolderPath( Environment.SpecialFolder.MyMusic);' ,
+        'if (dialog.ShowDialog() == true)       // User clicks Open/Save ', '{', 'MessageBox.Show(dialog.FileName);', '}',
+        ],
     },
 
 
