@@ -19,13 +19,13 @@ function renderCodeSnipers(){
      //makeCodeSniper(sniper.code)
 
   indexCodeSnupers += `
-  <p>${sniper.explanation}</p>`
+  <h5>${sniper.explanation}</h5> <p>${sniper.comment}</p>`
       + sniper.code
-   +   ` <p>${sniper.comment}</p> `
-
-
     })
 }
 function render(){
-    main.innerHTML = indexCodeSnupers;
+    let d = document.createElement('div')
+    d.classList.add('sniperContainer')
+    d.innerHTML = indexCodeSnupers;
+    main.appendChild(d)
 }

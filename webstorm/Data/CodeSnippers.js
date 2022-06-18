@@ -7,7 +7,8 @@ const codeSnipers =  [
              vak: ['Csharp'],
             oplSem: 'Pro1Sem1',
             reference:['timer','DispatcherTimer','TimeSpan', 'Pro1Sem1'],
-            explanation: '',
+            explanation: 'DispatcherTimer timer',
+            comment:'',
             program: 'WPF',
             code: `<pre><code>
         //declareer variable die we nodig hebben',
@@ -40,7 +41,7 @@ const codeSnipers =  [
         vak: ['Csharp'],
             oplSem: 'Pro1Sem1',
             reference: ['Window_Closing', 'closing', 'xaml', 'Pro1Sem1', 'switch'],
-            explanation: '',
+            explanation: 'Window_Closing event met switch',
             comment:'',
             program: 'WPF',
             code: `<pre><code>
@@ -60,7 +61,7 @@ const codeSnipers =  [
         vak: ['Csharp'],
             oplSem: 'Pro1Sem1',
             reference: ['Window_Closing', 'closing', 'xaml', 'Pro1Sem1', 'if-statement'],
-            explanation: '',
+            explanation: 'Window_Closing event met if-statement\n',
             comment:'',
             program: 'WPF',
             code: `<pre><code>
@@ -77,7 +78,7 @@ const codeSnipers =  [
             vak: ['Csharp'],
             oplSem: 'Pro1Sem1',
             reference: ['MessageBox', 'Pro1Sem1'],
-            explanation: '',
+            explanation: 'Messagebox ',
             comment:'',
             program: 'WPF',
             code: `<pre><code>
@@ -92,11 +93,11 @@ const codeSnipers =  [
         vak: ['Csharp'],
         oplSem: 'Pro1Sem1',
         reference: ['MessageBox','MessageBoxResult','Pro1Sem1', 'MessageBoxButton'],
-        explanation: '',
+        explanation: 'Messagebox met Yes No input',
         comment:'',
         program: 'WPF',
         code: `<pre><code>
-            //Messagebox
+            
             MessageBoxResult result;
             result = MessageBox.Show("Is Brussel de hoofdstad van Belgie ?", "Quiz", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)
@@ -112,7 +113,7 @@ const codeSnipers =  [
         vak: ['Csharp'],
         oplSem: 'Pro1Sem1',
         reference: ['MessageBox','MessageBoxImage','Pro1Sem1', 'MessageBoxButton'],
-        explanation: '',
+        explanation: 'Messagebox met tekening ',
         comment:'',
         program: 'WPF',
         code: `<pre><code>
@@ -128,7 +129,7 @@ const codeSnipers =  [
         vak: ['Csharp'],
         oplSem: 'Pro1Sem2',
         reference: ['OpenFileDialog','ShowDialog','Pro1Sem2', 'Gebruiker kan file kiezen'],
-        explanation: 'laat de gebruiker een file kiezen ',
+        explanation: 'OpenFileDialog : laat de gebruiker een file kiezen ',
         comment: '',
         program: 'WPF',
         code: `<pre><code>
