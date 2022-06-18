@@ -1,7 +1,7 @@
 
 let convert = ''
 let parse = ''
-let index = ''
+let indexFund = ''
 
 window.onload = function (){
     renderGoeideLinks();
@@ -13,16 +13,16 @@ window.onload = function (){
 }
 function renderDataTypes(){
     domiDataTypes.getallen.forEach(e =>{
-        index += makeCard(e);
+        indexFund += makeCard(e);
     })
     domiDataTypes.kommagetallen.forEach(e => {
-        index += makeCard(e);
+        indexFund += makeCard(e);
     })
     domiDataTypes.Karakters.forEach(e => {
-        index += makeCard(e);
+        indexFund += makeCard(e);
     })
     domiDataTypes.truefalse.forEach(e => {
-        index += makeCard(e);
+        indexFund += makeCard(e);
     })
     function makeCard(e){
         convert = ''
@@ -60,7 +60,7 @@ function renderDataTypes(){
     }
 }
 function renderDateTime(){
-    index +=
+    indexFund +=
         `
         <h3>${domiViewdate_time.title}</h3>
         <p>namespace: ${domiViewdate_time.namespaces}</p>
@@ -69,11 +69,11 @@ function renderDateTime(){
        </div>
         `
        domiViewdate_time.decDateTime.forEach(e =>{
-           index += makeCode(e)
+           indexFund += makeCode(e)
        })
-    index += `<h3> zo vraag je een datum of tijd aan de console</h3>`;
+    indexFund += `<h3> zo vraag je een datum of tijd aan de console</h3>`;
     domiViewdate_time.outDateTime.forEach(e =>{
-        index +=  makeCodeVar(e)
+        indexFund +=  makeCodeVar(e)
     })
     function makeCode(e){
         return `<div class="disFlex"><p class="">Console.WriteLine(${e.code})</p> <p class=" comment">// output: ${e.uitput}</p></div>`
@@ -84,7 +84,7 @@ function renderDateTime(){
 }
 function renderGoeideLinks(){
     goeieLinks.forEach(e =>{
-        index += getReferences(e) +`
+        indexFund += getReferences(e) +`
         <a href="${e.url}">${e.name}</a>
         <p>${e.beschrijving}</p>
         `
@@ -100,7 +100,7 @@ function renderGoeideLinks(){
 }
 function renderStatemens(){
     statemens.forEach(sta =>{
-        index +=`
+        indexFund +=`
        <h4>${sta.name}</h4>
         <p>${sta.gebruik}</p>`
         + makeSyntax(sta)
@@ -124,5 +124,5 @@ function renderStatemens(){
 
 
 function render(){
-    document.body.innerHTML += index
+    main.innerHTML += indexFund
 }
