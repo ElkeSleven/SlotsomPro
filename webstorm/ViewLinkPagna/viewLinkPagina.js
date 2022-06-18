@@ -9,16 +9,16 @@ window.onload = function (){
 function getIndex(){
     myLinks.forEach(linkgroup => {
         linkgroup.awesomeLinks.forEach(link => {
-            let group = 'awesomeLinks'
+            let group = 'Website Links'
             index += makeLinkCard(link , group)
 
         })
        linkgroup.awesomeYouTubeChannels.forEach(link => {
-           let group = 'awesomeYouTubeChannels'
+           let group = 'YT-Channels'
            index += makeLinkCard(link, group)
         })
         linkgroup.awesomeYouTubeVideos.forEach(link => {
-            let group = 'awesomeYouTubeVideos'
+            let group = 'YT-Videos'
             index += makeLinkCard(link, group)
         })
     })
@@ -30,21 +30,24 @@ function makeLinkCard(link, group){
     <div class="linkCard">
     <div class="linkCard--inner">
 <div class="linkCard__oms">
-<div>${group}</div>
 <div>${link.vak}</div>
+<div>${group}</div>
 </div>
-<div class="linkCard__vb">
-<a href="${link.url}">${link.naam}</a><br>
-<a href="${link.url}">${link.omschrijving}</a>
-</div>
+<div class="linkCard__link">
+<a href="${link.url}"><div >${link.naam}</div>
+<div>${link.omschrijving}</div>
+</a></div>
 </div> </div>     
     `
 
 
 }
 function renderLinks(){
+    let containerP =  document.createElement('div');
+    containerP.classList.add(('linkContainer'))
+    main.appendChild(containerP)
    let containerI =  document.createElement('div')
-    containerI.classList.add(('linkCointainer'))
+    containerI.classList.add(('linkBox'))
     containerI.innerHTML = index
-    main.appendChild(containerI)
+    containerP.appendChild(containerI)
 }

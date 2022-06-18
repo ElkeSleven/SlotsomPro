@@ -1,10 +1,14 @@
-/*style datatype*/
 
-.linkCointainer{
-    padding: .25rem .5rem;
+.linkContainer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.linkBox{
+    padding: .25rem .5rem;
 
-
+}
 .linkCard + .linkCard{
     margin: .5rem 0;
 }
@@ -12,6 +16,7 @@
     background-color: rgba(255, 255, 255, 0.86);
     backdrop-filter: blur(25px);
     overflow: hidden;
+    min-width: 80ch;
     /* transform: translateX(152%);
     transition: 400ms transform ease;*/
 }
@@ -22,6 +27,7 @@
 }
 .linkCard--inner>div{
     color: deepskyblue;
+
 }
 .linkCard__oms{
     display: flex;
@@ -29,7 +35,12 @@
     border-bottom: 1px solid lightgray;
     padding: .25rem  1rem ;
 }
-.linkCard__vb{
+.linkCard__link{
     padding: .5rem  1rem ;
-    max-width: 80ch;
+}
+.linkCard__link a {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
 }

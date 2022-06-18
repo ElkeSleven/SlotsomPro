@@ -20,35 +20,35 @@ const myLinks = [{
             reference: ['CSS', 'border-radius','Blob', 'Cirkel','Figuur','Figuren', 'Shape' ]
         },
         {
-            vak: ['JS','Csharp','Data','web'],
+            vak: ['Csharp','Data','web'],
             naam: 'CSV-JSON',
             omschrijving: 'zet csv naar json of json naar csv',
             url: "https://csvjson.com/",
             reference: ['CSS', 'JSON', ]
         },
         {
-            vak: ['web','CSS'],
+            vak: ['web'],
             naam: 'CSSBattle',
             omschrijving: 'test je css kennis',
             url: "https://cssbattle.dev/",
             reference: ['CSS', 'GAME', 'Test']
         },
         {
-            vak: ['web','CSS'],
+            vak: ['web'],
             naam: 'SVG assets designer ',
             omschrijving: 'Generate unique SVG design assets',
             url: "https://haikei.app/",
             reference: ['CSS', 'Wave', 'Background', 'Blob', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
         },
         {
-            vak: ['CSS','web'],
+            vak: ['web'],
             naam: 'SVG shape divider',
             omschrijving: 'Generate SVG shape divider',
             url: "https://www.shapedivider.app/",
             reference: ['CSS', 'Wave', 'Dividers', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
         },
         {
-            vak: ['JS','Data'],
+            vak: ['web','Data','Csharp'],
             naam: 'microsoft lean platform',
             omschrijving: 'leer modules van microsoft ',
             url: "https://docs.microsoft.com/en-us/learn/browse/",
@@ -58,28 +58,28 @@ const myLinks = [{
     ],
     awesomeYouTubeChannels : [
         {
-            vak: ['JS','Csharp','Data','CSS','web'],
+            vak: ['Csharp','Data','web'],
             naam: 'Fireship',
             omschrijving: '',
             url: "https://www.youtube.com/c/Fireship",
             reference: ['JS','Csharp','Data','CSS']
         },
         {
-            vak: ['JS','Csharp','Data','CSS','web'],
+            vak: ['Csharp','Data','web'],
             naam: 'dcode',
             omschrijving: '',
             url: "https://www.youtube.com/c/dcode-software",
             reference: ['JS','Csharp','Data','CSS']
         },
         {
-            vak: ['JS','CSS'],
+            vak: ['web',],
             naam: 'Web Dev Simplified',
             omschrijving: '',
             url: "https://www.youtube.com/c/WebDevSimplified",
             reference: ['JS']
         },
         {
-            vak: ['JS','CSS'],
+            vak: ['web',],
             naam: 'Kevin Powell',
             omschrijving: '',
             url: "https://www.youtube.com/kepowob",
@@ -100,7 +100,7 @@ const myLinks = [{
             reference: ['Csharp']
         },
         {
-            vak: ['Csharp','web','Data','JS','CSS','HTML'],
+            vak: ['Csharp','web','Data'],
             naam: 'Bro Code',
             omschrijving: 'tutorials, programming examples (games)',
             url: "https://www.youtube.com/c/BroCodez",
@@ -125,13 +125,13 @@ const myLinks = [{
     awesomeYouTubeVideos : [
         {
             vak: ['Csharp'],
-            naam: 'C# Fundamentals for Beginners',
+            naam: 'C# for Beginners',
             omschrijving: '8uur uitleg van \'hello world\' tot lists, entities, ...',
             url: "https://www.youtube.com/watch?v=0QUgvfuKvWU",
             reference: ['Csharp','ConsoleAPP']
         },
         {
-            vak: ['CSS','web'],
+            vak: ['web'],
             naam: 'CSS units : px , rem , em , vh , vw , ...',
             omschrijving: 'uitleg over CSS units',
             url: "https://www.youtube.com/watch?v=N5wpD9Ov_To",
