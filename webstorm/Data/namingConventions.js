@@ -6,8 +6,6 @@
 // • Pascal Case (PascalCase): hierin is de eerste letter van elk woord een hoofdletter
 
 
-
-
 //** C#
 // Identifier Casing Voorbeeld
     // Class PascalCase public class LeesBestand { ... }

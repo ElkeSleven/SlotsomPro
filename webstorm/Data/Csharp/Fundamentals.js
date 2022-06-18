@@ -270,11 +270,6 @@ const methods = [
 ]
 
 
-
-
-
-
-
 //what a class is ¯\_(ツ)_/¯
 //  oop,
 // syntax,  classes,
