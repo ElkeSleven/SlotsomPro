@@ -9,5 +9,8 @@ const viewlinks = [{
 },{
     naam: 'Csharp Fundamentals',
     href:'../viewCsharpFundamentals/index.html',
+},{
+    naam: 'Code Snippers',
+    href:'../viewCodeSnippers/index.html',
 }
 ]

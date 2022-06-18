@@ -34,7 +34,7 @@ function makeLinkCard(link, group){
 <div>${group}</div>
 </div>
 <div class="linkCard__link">
-<a href="${link.url}"><div >${link.naam}</div>
+<a href="${link.url}" target="_blank"><div >${link.naam}</div>
 <div>${link.omschrijving}</div>
 </a></div>
 </div> </div>     

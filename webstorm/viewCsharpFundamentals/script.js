@@ -8,20 +8,10 @@ window.onload = function (){
     renderDataTypes();
     renderDateTime();
     renderStatemens();
-
     render();
 }
 function renderDataTypes(){
-    domiDataTypes.getallen.forEach(e =>{
-        indexFund += makeCard(e);
-    })
-    domiDataTypes.kommagetallen.forEach(e => {
-        indexFund += makeCard(e);
-    })
-    domiDataTypes.Karakters.forEach(e => {
-        indexFund += makeCard(e);
-    })
-    domiDataTypes.truefalse.forEach(e => {
+    domiDataTypes.getallen.concat(domiDataTypes.kommagetallen).concat(domiDataTypes.Karakters).concat(domiDataTypes.truefalse).forEach(e =>{
         indexFund += makeCard(e);
     })
     function makeCard(e){
@@ -84,19 +74,11 @@ function renderDateTime(){
 }
 function renderGoeideLinks(){
     goeieLinks.forEach(e =>{
-        indexFund += getReferences(e) +`
+        indexFund += `
         <a href="${e.url}">${e.name}</a>
         <p>${e.beschrijving}</p>
-        `
-    })
-    function getReferences(e){
-        let x = `<div class="reference"> `
-        e.reference.forEach(r =>{
-            x +=`<span>${r}</span>`
-        })
+        `})
 
-        return x + `</div> `
-    }
 }
 function renderStatemens(){
     statemens.forEach(sta =>{

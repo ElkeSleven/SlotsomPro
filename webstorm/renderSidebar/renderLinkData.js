@@ -15,7 +15,7 @@ function renderAwesomeLinks(){
     viewlinks.forEach(link =>{
         innderHtmlLinksAside +=
             `
-        <a href="${link.href}" target="_blank">${link.naam}</a>      
+        <a href="${link.href}" >${link.naam}</a>      
        `
     })
 
