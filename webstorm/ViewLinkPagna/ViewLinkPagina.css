@@ -1,0 +1,35 @@
+/*style datatype*/
+
+.linkCointainer{
+    padding: .25rem .5rem;
+}
+
+
+.linkCard + .linkCard{
+    margin: .5rem 0;
+}
+.linkCard{
+    background-color: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(25px);
+    overflow: hidden;
+    /* transform: translateX(152%);
+    transition: 400ms transform ease;*/
+}
+.linkCard--inner{
+    overflow: hidden;
+    border-radius: 0.25rem;
+    border : 2px solid gray;
+}
+.linkCard--inner>div{
+    color: deepskyblue;
+}
+.linkCard__oms{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: .25rem  1rem ;
+}
+.linkCard__vb{
+    padding: .5rem  1rem ;
+    max-width: 80ch;
+}
