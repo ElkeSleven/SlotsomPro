@@ -1,79 +1,50 @@
-/*
-.hljs-comment,
-.hljs-function,
-.hljs-keyword,
-.hljs-title,
-.hljs-params,
-.hljs-string,
-.hljs-literal,
-.hljs-built_in{
-    color: black;
-    font-weight: normal;
-}
 
 
 
-.hljs-type,
-.hljs-varaible,
-.hljs-operator,
-.hljs-property,
-.hljs-number{
-    color: darkgrey;
+.filterContainer{
+    display: flex;
+    padding: .5rem 0;
+    gap: 1rem
 }
-*/
-
-.sniperContainer{
-    padding: 12px;
-}
-code{
-    line-height: 1.65rem;
+.filterboxLanguage{
+    display: flex;
 
 }
-.hljs{
-    color: black;
-
+.filterboxLanguage div,
+.filterboxLanguage select{
+   align-self: center;
+}
+.filterboxLanguage div,
+.SearchBar button{
+    margin: 0 1rem ;
+}
+*{
+    /*outline: 1px solid firebrick;*/
 }
 
-.hljs-comment{
-    color: #086656;
-    font-weight: bold;
-}
-.hljs-function{
-    /*box*/
-
-}
-.hljs-keyword{
-//color: #900ac4;
-    color: #0202ff;
-}
-.hljs-title{
-    color: #755421;
-}
-.hljs-params{
-    color: #040102;
-}
-/*end box*/
-.hljs-string{
-    color: #a41717;
-}
-.hljs-literal{
-    color: #0202ff;
-}
-.hljs-built_in{
-    color: #0202ff;
-
+.sniperContainer, body, main{
+    overflow-x: hidden;
 }
 
-.hljs-property{
-    color: #1e65ff;
+.codeSniperBox{
+    border:  1px solid lightgray;
+
 }
-.hljs-number{
-  color: #900ac4;
+.codeSniperBox+.codeSniperBox{
+    margin-top: .5rem
 }
 
+.codeSniperBox--inner{
 
-.hljs-title .class_{}
-.hljs-title .function_{}
-
-
+}
+.codeSniper__title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: .25rem  1rem ;
+}
+.codeSniper__code{
+    margin: 1rem;
+    background-color: #afabab;
+}
 

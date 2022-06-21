@@ -1,0 +1,81 @@
+/*
+.hljs-comment,
+.hljs-function,
+.hljs-keyword,
+.hljs-title,
+.hljs-params,
+.hljs-string,
+.hljs-literal,
+.hljs-built_in{
+    color: black;
+    font-weight: normal;
+}
+
+
+
+.hljs-type,
+.hljs-varaible,
+.hljs-operator,
+.hljs-property,
+.hljs-number{
+    color: darkgrey;
+}
+*/
+
+.sniperContainer{
+    padding: 12px;
+}
+code{
+    line-height: 1.65rem;
+
+
+}
+.hljs{
+    color: black;
+    background-color: unset;
+
+}
+
+.hljs-comment{
+    color: #086656;
+    font-weight: bold;
+}
+.hljs-function{
+    /*box*/
+
+}
+.hljs-keyword{
+//color: #900ac4;
+    color: #0202ff;
+}
+.hljs-title{
+    color: #755421;
+}
+.hljs-params{
+    color: #040102;
+}
+/*end box*/
+.hljs-string{
+    color: #a41717;
+}
+.hljs-literal{
+    color: #0202ff;
+}
+.hljs-built_in{
+    color: #0202ff;
+
+}
+
+.hljs-property{
+    color: #1e65ff;
+}
+.hljs-number{
+  color: #900ac4;
+}
+
+
+.hljs-title .class_{}
+.hljs-title .function_{}
+
+
+
