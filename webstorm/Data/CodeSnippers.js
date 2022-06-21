@@ -4,12 +4,11 @@
 const codeSnipersCsharp =  [
 
     {
-             vak: ['Csharp'],
-            oplSem: 'Pro1Sem1',
-            reference:['timer','DispatcherTimer','TimeSpan', 'Pro1Sem1'],
-            explanation: 'DispatcherTimer timer',
-            comment:'',
-            program: 'WPF',
+        oplSem: 'Pro1Sem1',
+        reference:['timer','DispatcherTimer','TimeSpan'],
+        explanation: 'DispatcherTimer timer',
+        comment:'wpf app',
+        language: 'Csharp',
             code: `
         //declareer variable die we nodig hebben',
         private int increment = 0;
@@ -42,8 +41,8 @@ const codeSnipersCsharp =  [
             oplSem: 'Pro1Sem1',
             reference: ['Window_Closing', 'closing', 'xaml', 'Pro1Sem1', 'switch'],
             explanation: 'Window_Closing event met switch',
-            comment:'',
-            program: 'WPF',
+            comment:'wpf app',
+            language: 'Csharp',
             code: `
         //Window_Closing event met switch
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -62,8 +61,8 @@ const codeSnipersCsharp =  [
             oplSem: 'Pro1Sem1',
             reference: ['Window_Closing', 'closing', 'xaml', 'Pro1Sem1', 'if-statement'],
             explanation: 'Window_Closing event met if-statement\n',
-            comment:'',
-            program: 'WPF',
+            comment:'wpf app',
+            language: 'Csharp',
             code: `
         //Window_Closing event met if-statement
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -79,8 +78,8 @@ const codeSnipersCsharp =  [
             oplSem: 'Pro1Sem1',
             reference: ['MessageBox', 'Pro1Sem1'],
             explanation: 'Messagebox ',
-            comment:'',
-            program: 'WPF',
+            comment:'wpf app',
+            language: 'Csharp',
             code: `
             //Messagebox
             MessageBox.Show("bericht aan gebruiker ");
@@ -93,8 +92,8 @@ const codeSnipersCsharp =  [
         oplSem: 'Pro1Sem1',
         reference: ['MessageBox','MessageBoxResult','Pro1Sem1', 'MessageBoxButton'],
         explanation: 'Messagebox met Yes No input',
-        comment:'',
-        program: 'WPF',
+        comment:'wpf app',
+        language: 'Csharp',
         code: `
             
             MessageBoxResult result;
@@ -113,8 +112,8 @@ const codeSnipersCsharp =  [
         oplSem: 'Pro1Sem1',
         reference: ['MessageBox','MessageBoxImage','Pro1Sem1', 'MessageBoxButton'],
         explanation: 'Messagebox met tekening ',
-        comment:'',
-        program: 'WPF',
+        comment:'wpf app',
+        language: 'Csharp',
         code: `
             MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel, MessageBoxImage.Information);
             
@@ -131,8 +130,8 @@ const codeSnipersCsharp =  [
         oplSem: 'Pro1Sem2',
         reference: ['OpenFileDialog','ShowDialog','Pro1Sem2', 'Gebruiker kan file kiezen'],
         explanation: 'OpenFileDialog : laat de gebruiker een file kiezen ',
-        comment: '',
-        program: 'WPF',
+        comment: 'Wpf app',
+        language: 'Csharp',
         code: `
         // declareren van variable die we nodig hebben
         private string currentFile;
@@ -157,8 +156,8 @@ const codeSnipersCsharp =  [
         oplSem: 'Pro1Sem2',
         reference: ['OpenFileDialog','ShowDialog','Pro1Sem2', 'Gebruiker kan file kiezen', 'Environment', 'SpecialFolder', 'SaveFileDialog'],
         explanation: 'open de verkenner op verschillende locaties',
-        comment: '',
-        program: 'WPF',
+        comment: 'wpf app',
+        language: 'Csharp',
         code: `
             OpenFileDialog dialog = new OpenFileDialog();    // or SaveFileDialog dialog = new SaveFileDialog();
            
@@ -191,9 +190,8 @@ const codeSnipersJS = [
         explanation: 'Input van gebruiker vragen via prompt(message , placeholder)\n' +
             'Message naar gebruiker via alert(message)\n',
         comment:'',
-        program: 'javascript',
+        language: 'javascript',
         code: `
-        <pre><code>
         let naamVanGebruiker = prompt("Gelieve uw naam in te vullen", "Type hier uw naam");
         alert(\`Welkom \${naamVanGebruiker}\`); 
         
@@ -201,7 +199,7 @@ const codeSnipersJS = [
         let naam = prompt("Geef uw naam in.", "Type hier uw naam");
         naam = naam.trim();
         alert((naam === "Type hier uw naam" || naam === "") ? "U heeft niets ingevuld" : naam);
-       </code></pre>        
+             
         `,
     },
     {
@@ -210,9 +208,9 @@ const codeSnipersJS = [
         reference:['string', 'Pro1Sem2'],
         explanation: 'werken met strings ',
         comment: '',
-        program: 'javascript',
+        language: 'javascript',
         code: `
-        <pre><code>
+
         let myString  = 'aBcDe';
         console.log(  myString.toLowerCase() );    // output: 'abcde'
         console.log(  myString.toUpperCase() );    // output: 'ABCDE'
@@ -245,8 +243,7 @@ const codeSnipersJS = [
         let indexLaatsteLetter = zin.lastIndexOf(laatsteLetter);                   // output: 17
         console.log(zin.substring(indexLaatsteSpace, indexLaatsteLetter + 1));     // output: koekje                                         
                                                 
-                                                
-       </code></pre>        
+                                                      
         `,
     },
     {
@@ -255,9 +252,9 @@ const codeSnipersJS = [
         reference:['tijd','datum', 'Pro1Sem2'],
         explanation: 'laat de gebruiker zien hoelaaat het is  ',
         comment: '',
-        program: 'javascript',
+        language: 'javascript',
         code: `
-        <pre><code>
+
         let datum = new Date();
         let uren = datum.getHours();
         uren = (uren < 10 ) ? \`0\${uren}\` : uren;
@@ -285,7 +282,7 @@ const codeSnipersJS = [
         }
         
         console.log(tekst,' ', tijd)
-       </code></pre>        
+    
         `,
     },
     {
@@ -294,9 +291,9 @@ const codeSnipersJS = [
         reference:['tijd','datum','date','time', 'Pro1Sem2'],
         explanation: 'date en time',
         comment: '',
-        program: 'javascript',
+        language: 'javascript',
         code: `
-        <pre><code>
+
         const currentDate = new Date()  // datum van vandaag 
              
         const currentYear = new Date().getFullYear();     
@@ -312,8 +309,7 @@ const codeSnipersJS = [
         // 53
         const currentSeconds = new Date().getSeconds();   
         // 19
-
-       </code></pre>        
+      
         `,
     },
 
@@ -325,7 +321,7 @@ const ConsoleLogJS = [
         reference:['JS','console','table', 'Pro1Sem2'],
         explanation: 'console.log objecten',
         comment:'',
-        program: 'javascript',
+        language: 'javascript',
         code: `
         const obj1  = { naam: 'driehoek', hoeken: 3 , heeftVolume: false }
         const obj2  = { naam: 'kubus', hoeken: 8 , heeftVolume: true }
@@ -353,7 +349,7 @@ const ConsoleLogJS = [
         reference:['JS','console','time', 'Pro1Sem2'],
         explanation: 'tijd meten van een functie ',
         comment: '',
-        program: 'javascript',
+        language: 'javascript',
         code: `
         console.time('timer')
         
@@ -370,7 +366,7 @@ const ConsoleLogJS = [
         reference:['JS','console','%', 'Pro1Sem2'],
         explanation: 'maak console.log messages met style',
         comment: '',
-        program: 'javascript',
+        language: 'javascript',
         code: `
         console.log('%c  Hallo ', 'font-weight: bolder; color: red')
        
@@ -388,7 +384,7 @@ const centerTheDiv =[
         reference:['center','css', 'Pro1Sem1'],
         explanation: 'center de div',
         comment: '',
-        program: 'css',
+        language: 'css',
         code: `
         /*plaats de div met position absolute*/
         .div{
