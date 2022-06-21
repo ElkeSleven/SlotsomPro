@@ -23,7 +23,7 @@ function createSearchBar(){
 
 function firststepSearchBar(){
     let i = document.getElementById('sb').value.toLowerCase()
-    if(i !== ""){
+    if(i !== "" && i !== " "){
     document.getElementsByClassName('sniperContainer')[0].remove();
     indexCodeSnupers = ''
     filterArrayBySearchBar(i)}
@@ -34,7 +34,7 @@ function filterArrayBySearchBar(i){
            if (i === 'pro1sem1' || i === 'pro1sem2'){ if(s.oplSem.toLowerCase() === i) {filtered.push(s)}}
            else{
                s.reference.forEach(r => {
-                   if(r === i) {
+                   if(r.toLowerCase() === i || r.toLowerCase().includes(i +' ') || r.toLowerCase().includes(' ' + i +' ') || r.toLowerCase().includes(' ' + i) ) {
                        filtered.push(s)
                    }
                })

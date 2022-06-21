@@ -37,9 +37,8 @@ const codeSnipersCsharp =  [
 
     },
     {
-        vak: ['Csharp'],
             oplSem: 'pro1sem1',
-            reference: ['Window_Closing', 'closing', 'xaml', 'Pro1Sem1', 'switch'],
+            reference: ['Window_Closing', 'closing', 'xaml', 'switch'],
             explanation: 'Window_Closing event met switch',
             comment:'wpf app',
             language: 'Csharp',
@@ -57,9 +56,8 @@ const codeSnipersCsharp =  [
         }`
     },
     {
-        vak: ['Csharp'],
             oplSem: 'Pro1Sem1',
-            reference: ['Window_Closing', 'closing', 'xaml', 'Pro1Sem1', 'if-statement'],
+            reference: ['Window_Closing', 'closing', 'xaml', 'if-statement'],
             explanation: 'Window_Closing event met if-statement\n',
             comment:'wpf app',
             language: 'Csharp',
@@ -74,9 +72,8 @@ const codeSnipersCsharp =  [
 `
     },
     {
-            vak: ['Csharp'],
             oplSem: 'Pro1Sem1',
-            reference: ['MessageBox', 'Pro1Sem1'],
+            reference: ['MessageBox',],
             explanation: 'Messagebox ',
             comment:'wpf app',
             language: 'Csharp',
@@ -88,9 +85,8 @@ const codeSnipersCsharp =  [
             MessageBox.Show("bericht aan gebruiker ", "dit is de title");
            `},
     {
-        vak: ['Csharp'],
         oplSem: 'Pro1Sem1',
-        reference: ['MessageBox','MessageBoxResult','Pro1Sem1', 'MessageBoxButton'],
+        reference: ['MessageBox','MessageBoxResult', 'MessageBoxButton'],
         explanation: 'Messagebox met Yes No input',
         comment:'wpf app',
         language: 'Csharp',
@@ -108,9 +104,8 @@ const codeSnipersCsharp =  [
             }`
     },
     {
-        vak: ['Csharp'],
         oplSem: 'Pro1Sem1',
-        reference: ['MessageBox','MessageBoxImage','Pro1Sem1', 'MessageBoxButton'],
+        reference: ['MessageBox','MessageBoxImage', 'MessageBoxButton'],
         explanation: 'Messagebox met tekening ',
         comment:'wpf app',
         language: 'Csharp',
@@ -126,9 +121,9 @@ const codeSnipersCsharp =  [
             MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel, MessageBoxImage.Error);`
     },
     {
-        vak: ['Csharp'],
+
         oplSem: 'Pro1Sem2',
-        reference: ['OpenFileDialog','ShowDialog','Pro1Sem2', 'Gebruiker kan file kiezen'],
+        reference: ['OpenFileDialog','ShowDialog', 'Gebruiker kan file kiezen'],
         explanation: 'OpenFileDialog : laat de gebruiker een file kiezen ',
         comment: 'Wpf app',
         language: 'Csharp',
@@ -184,9 +179,8 @@ const codeSnipersCsharp =  [
 ]
 const codeSnipersJS = [
     {
-        vak: ['web'],
         oplSem: 'Pro1Sem2',
-        reference:['prompt','alert','message', 'Pro1Sem2'],
+        reference:['prompt','alert','message','Input'],
         explanation: 'Input van gebruiker vragen via prompt(message , placeholder)\n' +
             'Message naar gebruiker via alert(message)\n',
         comment:'',
@@ -203,9 +197,8 @@ const codeSnipersJS = [
         `,
     },
     {
-        vak: ['web'],
         oplSem: 'Pro1Sem2',
-        reference:['string', 'Pro1Sem2'],
+        reference:['string','werken met strings'],
         explanation: 'werken met strings ',
         comment: '',
         language: 'javascript',
@@ -247,9 +240,8 @@ const codeSnipersJS = [
         `,
     },
     {
-        vak: ['web'],
         oplSem: 'Pro1Sem2',
-        reference:['tijd','datum', 'Pro1Sem2'],
+        reference:['tijd','datum',],
         explanation: 'laat de gebruiker zien hoelaaat het is  ',
         comment: '',
         language: 'javascript',
@@ -286,9 +278,8 @@ const codeSnipersJS = [
         `,
     },
     {
-        vak: ['web'],
         oplSem: 'Pro1Sem2',
-        reference:['tijd','datum','date','time', 'Pro1Sem2'],
+        reference:['tijd','datum','date','time',],
         explanation: 'date en time',
         comment: '',
         language: 'javascript',
@@ -316,9 +307,8 @@ const codeSnipersJS = [
 ]
 const ConsoleLogJS = [
     {
-        vak: ['Web'],
         oplSem: 'Pro1Sem2',
-        reference:['JS','console','table', 'Pro1Sem2'],
+        reference:['console','table', 'obj'],
         explanation: 'console.log objecten',
         comment:'',
         language: 'javascript',
@@ -344,9 +334,8 @@ const ConsoleLogJS = [
         `
     },
     {
-        vak: ['Web'],
         oplSem: 'Pro1Sem2',
-        reference:['JS','console','time', 'Pro1Sem2'],
+        reference:['console','time','tijd meten'],
         explanation: 'tijd meten van een functie ',
         comment: '',
         language: 'javascript',
@@ -361,9 +350,8 @@ const ConsoleLogJS = [
         `
     },
     {
-        vak: ['Web'],
         oplSem: 'Pro1Sem2',
-        reference:['JS','console','%', 'Pro1Sem2'],
+        reference:['console','%','log'],
         explanation: 'maak console.log messages met style',
         comment: '',
         language: 'javascript',
@@ -379,9 +367,8 @@ const ConsoleLogJS = [
 ]
 const centerTheDiv =[
     {
-        vak: ['Web'],
         oplSem: 'Pro1Sem1',
-        reference:['center','css', 'Pro1Sem1'],
+        reference:['center',],
         explanation: 'center de div',
         comment: '',
         language: 'css',
@@ -411,8 +398,9 @@ const centerTheDiv =[
     }
 ]
 
-
-
+let st = 'dedecd';
+console.log(st.search('ec'))   // -1 false   of index
+console.log(st.includes('ec'))   // true false
 const codeSnipers = codeSnipersJS.concat(codeSnipersCsharp).concat(ConsoleLogJS).concat(centerTheDiv)
 
 
