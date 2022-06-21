@@ -4,7 +4,7 @@
 const codeSnipersCsharp =  [
 
     {
-        oplSem: 'Pro1Sem1',
+        oplSem: 'pro1sem1',
         reference:['timer','DispatcherTimer','TimeSpan'],
         explanation: 'DispatcherTimer timer',
         comment:'wpf app',
@@ -38,7 +38,7 @@ const codeSnipersCsharp =  [
     },
     {
         vak: ['Csharp'],
-            oplSem: 'Pro1Sem1',
+            oplSem: 'pro1sem1',
             reference: ['Window_Closing', 'closing', 'xaml', 'Pro1Sem1', 'switch'],
             explanation: 'Window_Closing event met switch',
             comment:'wpf app',

@@ -5,9 +5,43 @@ let indexCodeSnupers= ''
 let selectedLaguage;
 window.onload = function (){
     createLaguageSelect()
+    createSearchBar()
     renderCodeSnipers(codeSnipers)
 
     select.addEventListener('change', firststepLaguageSelect);
+}
+
+function createSearchBar(){
+    let sbInput = document.createElement('input')
+    sbInput.id = 'sb'
+    let sbButton = document.createElement('button')
+    sbButton.innerText = 'klik hier'
+    sbButton.addEventListener('click', firststepSearchBar)
+    main.appendChild(sbInput)
+    main.appendChild(sbButton)
+}
+
+function firststepSearchBar(){
+    let i = document.getElementById('sb').value.toLowerCase()
+    if(i !== ""){
+    document.getElementsByClassName('sniperContainer')[0].remove();
+    indexCodeSnupers = ''
+    filterArrayBySearchBar(i)}
+}
+function filterArrayBySearchBar(i){
+    let filtered = []
+       codeSnipers.filter(s => {
+           if (i === 'pro1sem1' || i === 'pro1sem2'){ if(s.oplSem.toLowerCase() === i) {filtered.push(s)}}
+           else{
+               s.reference.forEach(r => {
+                   if(r === i) {
+                       filtered.push(s)
+                   }
+               })
+
+           }
+       })
+    renderCodeSnipers(filtered)
 }
 
 
