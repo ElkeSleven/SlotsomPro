@@ -5,8 +5,9 @@ let indexCodeSnupers= ''
 let selectedLaguage;
 window.onload = function (){
     createLaguageSelect()
-    select.addEventListener('change', firststepLaguageSelect);
     renderCodeSnipers(codeSnipers)
+
+    select.addEventListener('change', firststepLaguageSelect);
 }
 
 
@@ -22,10 +23,10 @@ function filterArrayByLaguageSelect() {
         renderCodeSnipers(codeSnipers)
     }
     else {
-        let a = codeSnipers.filter(snipper => {
+        renderCodeSnipers(codeSnipers.filter(snipper => {
             return snipper.language === selectedLaguage;
-        })
-        renderCodeSnipers(a)
+        }))
+
     }
 
 }
