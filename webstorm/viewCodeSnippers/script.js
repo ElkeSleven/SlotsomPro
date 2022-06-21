@@ -20,7 +20,7 @@ function renderCodeSnipers(){
 
   indexCodeSnupers += `
   <h5>${sniper.explanation}</h5> <p>${sniper.comment}</p>`
-      + sniper.code
+      +`<pre><code class="hljs language-typescript">`+ sniper.code + `</code></pre>`
     })
 }
 function render(){

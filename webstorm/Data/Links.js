@@ -55,6 +55,20 @@ const myLinks = [{
             reference: ['Csharp', 'dotnet', 'GitHub', 'azure', 'Shape', 'SQL','msSQL', 'Data Analyst'
                 ,'Developer', 'DevOps','Visual Studio','.NET','Entity Framework', '.NET Core']
         },
+        {
+            vak: ['web'],
+            naam: 'Conquering Responsive Layouts',
+            omschrijving: 'van Kevin Powell(youtube) gratis cursus over responsive web-design',
+            url: "https://kevinpowell.co/responsive",
+            reference: ['CSS', 'responsive','layout', 'cursus']
+        },
+        {
+            vak: [''],
+            naam: '',
+            omschrijving: '',
+            url: "https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU",
+            reference: ['']
+        },
     ],
     awesomeYouTubeChannels : [
         {
@@ -155,6 +169,7 @@ const myLinks = [{
         reference: ['CSS','JS', 'domi']
     },],
 }]
+
 
 
 

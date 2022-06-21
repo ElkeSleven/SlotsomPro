@@ -1,7 +1,7 @@
 
 
 
-const codeSnipers =  [
+const codeSnipersCsharp =  [
 
     {
              vak: ['Csharp'],
@@ -10,7 +10,7 @@ const codeSnipers =  [
             explanation: 'DispatcherTimer timer',
             comment:'',
             program: 'WPF',
-            code: `<pre><code>
+            code: `
         //declareer variable die we nodig hebben',
         private int increment = 0;
         private DispatcherTimer timer;
@@ -34,7 +34,7 @@ const codeSnipers =  [
             TxtOpXaml.Text = increment.ToString();
         }
 
-</code></pre>`,
+`,
 
     },
     {
@@ -44,7 +44,7 @@ const codeSnipers =  [
             explanation: 'Window_Closing event met switch',
             comment:'',
             program: 'WPF',
-            code: `<pre><code>
+            code: `
         //Window_Closing event met switch
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -55,7 +55,7 @@ const codeSnipers =  [
                 default:e.Cancel = true; break;
             }
           
-        }</code></pre>`
+        }`
     },
     {
         vak: ['Csharp'],
@@ -64,7 +64,7 @@ const codeSnipers =  [
             explanation: 'Window_Closing event met if-statement\n',
             comment:'',
             program: 'WPF',
-            code: `<pre><code>
+            code: `
         //Window_Closing event met if-statement
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -72,7 +72,7 @@ const codeSnipers =  [
             if (result != MessageBoxResult.Yes) { e.Cancel = true; }
         }
 
-</code></pre>`
+`
     },
     {
             vak: ['Csharp'],
@@ -81,13 +81,12 @@ const codeSnipers =  [
             explanation: 'Messagebox ',
             comment:'',
             program: 'WPF',
-            code: `<pre><code>
+            code: `
             //Messagebox
             MessageBox.Show("bericht aan gebruiker ");
 
             // Messagebox met title
             MessageBox.Show("bericht aan gebruiker ", "dit is de title");
-</code></pre>
            `},
     {
         vak: ['Csharp'],
@@ -96,7 +95,7 @@ const codeSnipers =  [
         explanation: 'Messagebox met Yes No input',
         comment:'',
         program: 'WPF',
-        code: `<pre><code>
+        code: `
             
             MessageBoxResult result;
             result = MessageBox.Show("Is Brussel de hoofdstad van Belgie ?", "Quiz", MessageBoxButton.YesNo);
@@ -107,7 +106,7 @@ const codeSnipers =  [
             else
             {
                 MessageBox.Show("Sorry: verkeerd", "Oplossing");
-            }</code></pre>`
+            }`
     },
     {
         vak: ['Csharp'],
@@ -116,14 +115,16 @@ const codeSnipers =  [
         explanation: 'Messagebox met tekening ',
         comment:'',
         program: 'WPF',
-        code: `<pre><code>
-            //Messagebox met tekening 
+        code: `
             MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+            
             MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel, MessageBoxImage.Question);
+            
             MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel, MessageBoxImage.Warning);
+            
             MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel, MessageBoxImage.Exclamation);
-            MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel, MessageBoxImage.Error);
-</code></pre>`
+            
+            MessageBox.Show("Message", "Title", MessageBoxButton.OKCancel, MessageBoxImage.Error);`
     },
     {
         vak: ['Csharp'],
@@ -132,7 +133,7 @@ const codeSnipers =  [
         explanation: 'OpenFileDialog : laat de gebruiker een file kiezen ',
         comment: '',
         program: 'WPF',
-        code: `<pre><code>
+        code: `
         // declareren van variable die we nodig hebben
         private string currentFile;
         private string currentFolder;
@@ -149,7 +150,7 @@ const codeSnipers =  [
                 fileTextBox.Text = currentFile;
             }
         }
-</code></pre>`,
+`,
     },
     {
         vak: ['Csharp'],
@@ -158,24 +159,275 @@ const codeSnipers =  [
         explanation: 'open de verkenner op verschillende locaties',
         comment: '',
         program: 'WPF',
-        code: `<pre><code>
+        code: `
             OpenFileDialog dialog = new OpenFileDialog();    // or SaveFileDialog dialog = new SaveFileDialog();
+           
             // openent verkenner in Deze pc
             dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyComputer);
+           
              // openent verkenner in Deze Mijn documenten
             dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+           
              // openent verkenner in Mijn afbeeldingen
             dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+           
              // openent verkenner in Mijn muziek
             dialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
+           
             if (dialog.ShowDialog() == true)  // User clicks Open/Save
             {
                 MessageBox.Show(dialog.FileName);
             }
-
-
-</code></pre>`,
+`,
     },
 
 
 ]
+const codeSnipersJS = [
+    {
+        vak: ['web'],
+        oplSem: 'Pro1Sem2',
+        reference:['prompt','alert','message', 'Pro1Sem2'],
+        explanation: 'Input van gebruiker vragen via prompt(message , placeholder)\n' +
+            'Message naar gebruiker via alert(message)\n',
+        comment:'',
+        program: 'javascript',
+        code: `
+        <pre><code>
+        let naamVanGebruiker = prompt("Gelieve uw naam in te vullen", "Type hier uw naam");
+        alert(\`Welkom \${naamVanGebruiker}\`); 
+        
+        
+        let naam = prompt("Geef uw naam in.", "Type hier uw naam");
+        naam = naam.trim();
+        alert((naam === "Type hier uw naam" || naam === "") ? "U heeft niets ingevuld" : naam);
+       </code></pre>        
+        `,
+    },
+    {
+        vak: ['web'],
+        oplSem: 'Pro1Sem2',
+        reference:['string', 'Pro1Sem2'],
+        explanation: 'werken met strings ',
+        comment: '',
+        program: 'javascript',
+        code: `
+        <pre><code>
+        let myString  = 'aBcDe';
+        console.log(  myString.toLowerCase() );    // output: 'abcde'
+        console.log(  myString.toUpperCase() );    // output: 'ABCDE'
+        
+        let getal_string = '3';
+        let myGetal = parseInt(getal_string);   // net de string om naar een getal
+        console.log(myGetal);                   // output : 3
+        
+        
+        let zin = 'Dit is een zin';
+        console.log(  zin.indexOf("e") );   // zegt op welke index de EERSTE 'e' staat
+                                            // output : 7
+        
+        console.log(  zin.indexOf(" ", 4) );    // zegt op welke index de EERSTE specie staat vanaf index 4
+                                                // output: 6
+                                                
+        let zin = "Ik wil een koekje";
+        console.log(zin.length);                  // output: 17
+        console.log(zin.charAt(0));               // output: I
+        console.log(zin.charAt(11));              // output: k
+        console.log(zin.substring(11, 15));       // output: koek
+        
+        console.log(zin.lastIndexOf(" "));      // output: 10
+        console.log(zin.lastIndexOf("e"));      // output: 16
+        console.log(zin.substring(10, 17));     // output: koekje
+        
+        
+        let indexLaatsteSpace = zin.lastIndexOf(" ");                              // output: 10
+        let laatsteLetter = zin.slice(zin.length - 1);                             // output: e
+        let indexLaatsteLetter = zin.lastIndexOf(laatsteLetter);                   // output: 17
+        console.log(zin.substring(indexLaatsteSpace, indexLaatsteLetter + 1));     // output: koekje                                         
+                                                
+                                                
+       </code></pre>        
+        `,
+    },
+    {
+        vak: ['web'],
+        oplSem: 'Pro1Sem2',
+        reference:['tijd','datum', 'Pro1Sem2'],
+        explanation: 'laat de gebruiker zien hoelaaat het is  ',
+        comment: '',
+        program: 'javascript',
+        code: `
+        <pre><code>
+        let datum = new Date();
+        let uren = datum.getHours();
+        uren = (uren < 10 ) ? \`0\${uren}\` : uren;
+        let minuten = datum.getMinutes();
+        minuten = (minuten < 10 ) ? \`0\${minuten}\` : minuten;
+        let seconden = datum.getSeconds();
+        seconden = (seconden < 10 ) ? \`0\${seconden}\` : seconden;
+        let tijd = \`\${uren}u\${minuten}m\${seconden}s\`;
+        
+        // Indien uren kleiner is dan 10, dan is uren een string geworden i.p.v. een nummer. bv "02".
+        // Om zeker te zijn dat uren altijd een nummer is, voer ik een parseInt uit.
+        uren = parseInt(uren);
+        
+        let tekst;
+        
+        switch (true) {
+            case (uren > 7 && uren < 12):
+                tekst = "Goedemorgen het is nu";
+                break;
+            case(uren >=12 && uren < 18):
+                tekst = "Goede dag het is nu";
+                break;
+            default:
+                tekst = "Goede avond het is nu";
+        }
+        
+        console.log(tekst,' ', tijd)
+       </code></pre>        
+        `,
+    },
+    {
+        vak: ['web'],
+        oplSem: 'Pro1Sem2',
+        reference:['tijd','datum','date','time', 'Pro1Sem2'],
+        explanation: 'date en time',
+        comment: '',
+        program: 'javascript',
+        code: `
+        <pre><code>
+        const currentDate = new Date()  // datum van vandaag 
+             
+        const currentYear = new Date().getFullYear();     
+        //2022
+        const currentMonth = new Date().getMonth()        
+        // 4   <-- index van maand : 0 = Januari , 1 = Februari
+        const currentDay = new Date().getDay();          
+        // 2   <-- index van dag : 1 = maandag , 2 = dinsdag , ...
+        
+        const currentHour = new Date().getHours();        
+        // 21
+        const currentMinutes = new Date().getMinutes();   
+        // 53
+        const currentSeconds = new Date().getSeconds();   
+        // 19
+
+       </code></pre>        
+        `,
+    },
+
+]
+const ConsoleLogJS = [
+    {
+        vak: ['Web'],
+        oplSem: 'Pro1Sem2',
+        reference:['JS','console','table', 'Pro1Sem2'],
+        explanation: 'console.log objecten',
+        comment:'',
+        program: 'javascript',
+        code: `
+        const obj1  = { naam: 'driehoek', hoeken: 3 , heeftVolume: false }
+        const obj2  = { naam: 'kubus', hoeken: 8 , heeftVolume: true }
+        const obj3  = { naam: 'cirkel',  hoeken: 0 , heeftVolume: false }
+        
+        // een voor een 
+        console.log(obj1);
+        console.log(obj2);
+        console.log(obj3);
+        
+        // alles in een keer door : { }
+        console.log({obj1, obj2, obj3 })
+        
+        // als een table 
+        console.table([obj1 ,obj2,obj3])
+        
+        // zie wat voor element het is 
+        const element =  document.getElementById('id')
+        console.dir(element)    // output div
+        `
+    },
+    {
+        vak: ['Web'],
+        oplSem: 'Pro1Sem2',
+        reference:['JS','console','time', 'Pro1Sem2'],
+        explanation: 'tijd meten van een functie ',
+        comment: '',
+        program: 'javascript',
+        code: `
+        console.time('timer')
+        
+        let i = 0;
+        while (i < 100000000){i++}
+        
+        console.timeEnd('timer')
+        
+        `
+    },
+    {
+        vak: ['Web'],
+        oplSem: 'Pro1Sem2',
+        reference:['JS','console','%', 'Pro1Sem2'],
+        explanation: 'maak console.log messages met style',
+        comment: '',
+        program: 'javascript',
+        code: `
+        console.log('%c  Hallo ', 'font-weight: bolder; color: red')
+       
+        console.log('%c %o hallo', 'font-weight: bolder; color: red', obj1,)
+        
+        console.log('%c %s hallo', 'font-weight: bolder; color: red', obj1,)
+
+        `
+    },
+]
+const centerTheDiv =[
+    {
+        vak: ['Web'],
+        oplSem: 'Pro1Sem1',
+        reference:['center','css', 'Pro1Sem1'],
+        explanation: 'center de div',
+        comment: '',
+        program: 'css',
+        code: `
+        /*plaats de div met position absolute*/
+        .div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50% );
+        }
+        
+        /*zet de parent als flex */
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /*zet de parent als gird */
+        .grid{
+            display: grid;
+            place-content: center;
+        }
+        
+        `,
+    }
+]
+
+
+
+const codeSnipers = codeSnipersJS.concat(codeSnipersCsharp).concat(ConsoleLogJS).concat(centerTheDiv)
+
+
+
+
+
+
+
+
+
+
+
+
+
