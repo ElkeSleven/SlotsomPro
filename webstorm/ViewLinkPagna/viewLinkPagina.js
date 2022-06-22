@@ -30,11 +30,9 @@ function makeLinkCard(){
 
 }
 function renderLinks(){
-    let containerP =  document.createElement('div');
-    containerP.classList.add(('linkContainer'))
-    main.appendChild(containerP)
-   let containerI =  document.createElement('div')
-    containerI.classList.add(('linkBox'))
-    containerI.innerHTML = index
-    containerP.appendChild(containerI)
+    let linkContainer =  document.createElement('div');
+    linkContainer.classList.add(('linkContainer'))
+    main.appendChild(linkContainer)
+    linkContainer.innerHTML = index
+
 }
