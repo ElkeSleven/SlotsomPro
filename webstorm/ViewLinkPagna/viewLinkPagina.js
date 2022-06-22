@@ -3,42 +3,29 @@
 
 let index = '';
 window.onload = function (){
-    getIndex();
+    makeLinkCard();
     renderLinks();
 }
-function getIndex(){
-    myLinks.forEach(linkgroup => {
-        linkgroup.awesomeLinks.forEach(link => {
-            let group = 'Website Links'
-            index += makeLinkCard(link , group)
 
-        })
-       linkgroup.awesomeYouTubeChannels.forEach(link => {
-           let group = 'YT-Channels'
-           index += makeLinkCard(link, group)
-        })
-        linkgroup.awesomeYouTubeVideos.forEach(link => {
-            let group = 'YT-Videos'
-            index += makeLinkCard(link, group)
-        })
-    })
+function makeLinkCard(){
+    awesomeLinks.forEach(link => {
 
-
-}
-function makeLinkCard(link, group){
-     return `
-    <div class="linkCard">
-    <div class="linkCard--inner">
-<div class="linkCard__oms">
-<div>${link.vak}</div>
-<div>${group}</div>
-</div>
-<div class="linkCard__link">
-<a href="${link.url}" target="_blank"><div >${link.naam}</div>
-<div>${link.omschrijving}</div>
-</a></div>
-</div> </div>     
-    `
+        index += `
+<div class="linkCard">
+ <div class="linkCard--inner" >
+ <a href="${link.url}">
+    <div class="linkCard__link">
+        <div>${link.naam}</div>
+        <div>${link.language}</div>
+    </div>
+    <div class="linkCard__oms">
+        <div>${link.omschrijving}</div>
+        <div>${link.group}</div>
+    </div>
+ </a>
+ </div>
+</div>     
+    `  })
 
 
 }

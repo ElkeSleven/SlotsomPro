@@ -1,12 +1,11 @@
 
 
 
-
 // learn play
 
-const myLinks = [{
-    awesomeLinks : [
+const awesomeLinks = [
         {
+            group: 'Website Link',
             language: 'CSS',
             naam: 'fancy-border-radius',
             omschrijving: 'maak custom css figuren',
@@ -14,6 +13,7 @@ const myLinks = [{
             reference: [ 'border-radius','Blob', 'Cirkel','Figuur','Figuren', 'Shape' ]
         },
         {
+            group: 'Website Link',
             language: 'All',
             naam: 'CSV-JSON',
             omschrijving: 'zet csv naar json of json naar csv',
@@ -21,6 +21,7 @@ const myLinks = [{
             reference: [ 'JSON','csv' ]
         },
         {
+            group: 'Website Link',
             language: 'CSS',
             naam: 'CSSBattle',
             omschrijving: 'test je css kennis',
@@ -28,6 +29,7 @@ const myLinks = [{
             reference: [ 'play', 'learn']
         },
         {
+            group: 'Website Link',
             language: 'CSS',
             naam: 'SVG assets designer ',
             omschrijving: 'Generate unique SVG design assets',
@@ -35,6 +37,7 @@ const myLinks = [{
             reference: [ 'Wave', 'Background', 'Blob', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
         },
         {
+            group: 'Website Link',
             language: 'CSS',
             naam: 'SVG shape divider',
             omschrijving: 'Generate SVG shape divider',
@@ -42,6 +45,7 @@ const myLinks = [{
             reference: ['Wave', 'Dividers', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
         },
         {
+            group: 'Website Link',
             language: 'All',
             naam: 'microsoft lean platform',
             omschrijving: 'leer modules van microsoft ',
@@ -50,6 +54,7 @@ const myLinks = [{
                 ,'Developer', 'DevOps','Visual Studio','.NET','Entity Framework', '.NET Core']
         },
         {
+            group: 'Website Link',
             language: 'CSS',
             naam: 'Conquering Responsive Layouts',
             omschrijving: 'van Kevin Powell(youtube) gratis cursus over responsive web-design',
@@ -57,6 +62,7 @@ const myLinks = [{
             reference: ['responsive','layout', 'learn']
         },
         {
+            group: 'Website Link',
             language: 'All',
             naam: '',
             omschrijving: '',
@@ -64,15 +70,15 @@ const myLinks = [{
             reference: ['learn']
         },
         {
+            group: 'Website Link',
             language: 'All',
             naam: 'codewars',
             omschrijving: 'wat is jou rank ?',
             url: "https://www.codewars.com/",
             reference: ['learn','play']
         },
-    ],
-    awesomeYouTubeChannels : [
         {
+            group: 'YT-Channel',
             language: 'All',
             naam: 'Fireship',
             omschrijving: '',
@@ -80,6 +86,7 @@ const myLinks = [{
             reference: []
         },
         {
+            group: 'YT-Channel',
             language: 'All',
             naam: 'dcode',
             omschrijving: '',
@@ -87,6 +94,7 @@ const myLinks = [{
             reference: []
         },
         {
+            group: 'YT-Channel',
             language: 'JS',
             naam: 'Web Dev Simplified',
             omschrijving: '',
@@ -94,6 +102,7 @@ const myLinks = [{
             reference: []
         },
         {
+            group: 'YT-Channel',
             language: 'CSS',
             naam: 'Kevin Powell',
             omschrijving: '',
@@ -101,6 +110,7 @@ const myLinks = [{
             reference: []
         },
         {
+            group: 'YT-Channel',
             language: 'Csharp',
             naam: 'IAmTimCorey',
             omschrijving: '',
@@ -108,6 +118,7 @@ const myLinks = [{
             reference: [ 'WPF', 'xaml']
         },
         {
+            group: 'YT-Channel',
             language: 'Csharp',
             naam: 'Rainer Stropek',
             omschrijving: '',
@@ -115,6 +126,7 @@ const myLinks = [{
             reference: []
         },
         {
+            group: 'YT-Channel',
             language: 'All',
             naam: 'Bro Code',
             omschrijving: 'tutorials, programming examples (games)',
@@ -122,6 +134,7 @@ const myLinks = [{
             reference: []
         },
         {
+            group: 'YT-Channel',
             language: 'Csharp',
             naam: 'Moo ICT',
             omschrijving: '',
@@ -129,16 +142,15 @@ const myLinks = [{
             reference: [ 'WPF', 'xaml']
         },
         {
+            group: 'YT-Channel',
             language: 'Csharp',
             naam: 'dotNET',
             omschrijving: '',
             url: "https://www.youtube.com/c/dotNET",
             reference: ['.Net']
         },
-
-    ],
-    awesomeYouTubeVideos : [
         {
+            group: 'YT-Video',
             language: 'Csharp',
             naam: 'C# for Beginners',
             omschrijving: '8uur uitleg van \'hello world\' tot lists, entities, ...',
@@ -146,15 +158,14 @@ const myLinks = [{
             reference: ['ConsoleAPP', 'Beginner']
         },
         {
+            group: 'YT-Video',
             language: 'CSS',
             naam: 'CSS units : px , rem , em , vh , vw , ...',
             omschrijving: 'uitleg over CSS units',
             url: "https://www.youtube.com/watch?v=N5wpD9Ov_To",
             reference: ['units','rem','em']
         },
-
-    ],
-}]
+]
 
 
 
