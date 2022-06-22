@@ -1,54 +1,48 @@
 
 
 
-const  objVak = ['JS','Csharp','Data','CSS','web']
-const objReference = ['CSS','CSS units','ConsoleAPP','JS','Data','.Net',
-    'border-radius', 'Cirkel','Figuur','Figuren', 'Shape' ,'GAME', 'Test',
-    'Wave', 'Background', 'Blob', 'Waves',  'SVG','Dividers',
-    'Csharp', 'dotnet', 'GitHub', 'azure', 'Shape', 'SQL','msSQL', 'Data Analyst'
-    ,'Developer', 'DevOps','Visual Studio','.NET','Entity Framework', '.NET Core', 'WPF',
-    'xaml','HTML',
-]
+
+// learn play
 
 const myLinks = [{
     awesomeLinks : [
         {
-            vak: ['web','CSS'],
+            language: 'CSS',
             naam: 'fancy-border-radius',
             omschrijving: 'maak custom css figuren',
             url: "https://9elements.github.io/fancy-border-radius/",
-            reference: ['CSS', 'border-radius','Blob', 'Cirkel','Figuur','Figuren', 'Shape' ]
+            reference: [ 'border-radius','Blob', 'Cirkel','Figuur','Figuren', 'Shape' ]
         },
         {
-            vak: ['Csharp','Data','web'],
+            language: 'All',
             naam: 'CSV-JSON',
             omschrijving: 'zet csv naar json of json naar csv',
             url: "https://csvjson.com/",
-            reference: ['CSS', 'JSON', ]
+            reference: [ 'JSON','csv' ]
         },
         {
-            vak: ['web'],
+            language: 'CSS',
             naam: 'CSSBattle',
             omschrijving: 'test je css kennis',
             url: "https://cssbattle.dev/",
-            reference: ['CSS', 'GAME', 'Test']
+            reference: [ 'play', 'learn']
         },
         {
-            vak: ['web'],
+            language: 'CSS',
             naam: 'SVG assets designer ',
             omschrijving: 'Generate unique SVG design assets',
             url: "https://haikei.app/",
-            reference: ['CSS', 'Wave', 'Background', 'Blob', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
+            reference: [ 'Wave', 'Background', 'Blob', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
         },
         {
-            vak: ['web'],
+            language: 'CSS',
             naam: 'SVG shape divider',
             omschrijving: 'Generate SVG shape divider',
             url: "https://www.shapedivider.app/",
-            reference: ['CSS', 'Wave', 'Dividers', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
+            reference: ['Wave', 'Dividers', 'Waves', 'Shape', 'Figuur','Figuren', 'SVG']
         },
         {
-            vak: ['web','Data','Csharp'],
+            language: 'All',
             naam: 'microsoft lean platform',
             omschrijving: 'leer modules van microsoft ',
             url: "https://docs.microsoft.com/en-us/learn/browse/",
@@ -56,122 +50,112 @@ const myLinks = [{
                 ,'Developer', 'DevOps','Visual Studio','.NET','Entity Framework', '.NET Core']
         },
         {
-            vak: ['web'],
+            language: 'CSS',
             naam: 'Conquering Responsive Layouts',
             omschrijving: 'van Kevin Powell(youtube) gratis cursus over responsive web-design',
             url: "https://kevinpowell.co/responsive",
-            reference: ['CSS', 'responsive','layout', 'cursus']
+            reference: ['responsive','layout', 'learn']
         },
         {
-            vak: [''],
+            language: 'All',
             naam: '',
             omschrijving: '',
             url: "https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU",
-            reference: ['']
+            reference: ['learn']
+        },
+        {
+            language: 'All',
+            naam: 'codewars',
+            omschrijving: 'wat is jou rank ?',
+            url: "https://www.codewars.com/",
+            reference: ['learn','play']
         },
     ],
     awesomeYouTubeChannels : [
         {
-            vak: ['Csharp','Data','web'],
+            language: 'All',
             naam: 'Fireship',
             omschrijving: '',
             url: "https://www.youtube.com/c/Fireship",
-            reference: ['JS','Csharp','Data','CSS']
+            reference: []
         },
         {
-            vak: ['Csharp','Data','web'],
+            language: 'All',
             naam: 'dcode',
             omschrijving: '',
             url: "https://www.youtube.com/c/dcode-software",
-            reference: ['JS','Csharp','Data','CSS']
+            reference: []
         },
         {
-            vak: ['web',],
+            language: 'JS',
             naam: 'Web Dev Simplified',
             omschrijving: '',
             url: "https://www.youtube.com/c/WebDevSimplified",
-            reference: ['JS']
+            reference: []
         },
         {
-            vak: ['web',],
+            language: 'CSS',
             naam: 'Kevin Powell',
             omschrijving: '',
             url: "https://www.youtube.com/kepowob",
-            reference: ['CSS']
+            reference: []
         },
         {
-            vak: ['Csharp'],
+            language: 'Csharp',
             naam: 'IAmTimCorey',
             omschrijving: '',
             url: "https://www.youtube.com/user/IAmTimCorey",
-            reference: ['Csharp', 'WPF', 'xaml']
+            reference: [ 'WPF', 'xaml']
         },
         {
-            vak: ['Csharp'],
+            language: 'Csharp',
             naam: 'Rainer Stropek',
             omschrijving: '',
             url: "https://www.youtube.com/c/RainerStropek11",
-            reference: ['Csharp']
+            reference: []
         },
         {
-            vak: ['Csharp','web','Data'],
+            language: 'All',
             naam: 'Bro Code',
             omschrijving: 'tutorials, programming examples (games)',
             url: "https://www.youtube.com/c/BroCodez",
-            reference: ['Csharp','HTML', 'GAME', ]
+            reference: []
         },
         {
-            vak: ['Csharp'],
+            language: 'Csharp',
             naam: 'Moo ICT',
             omschrijving: '',
             url: "https://www.youtube.com/c/MooICT",
-            reference: ['Csharp', 'WPF', 'xaml']
+            reference: [ 'WPF', 'xaml']
         },
         {
-            vak: ['Csharp'],
+            language: 'Csharp',
             naam: 'dotNET',
             omschrijving: '',
             url: "https://www.youtube.com/c/dotNET",
-            reference: ['Csharp', '.Net']
+            reference: ['.Net']
         },
 
     ],
     awesomeYouTubeVideos : [
         {
-            vak: ['Csharp'],
+            language: 'Csharp',
             naam: 'C# for Beginners',
             omschrijving: '8uur uitleg van \'hello world\' tot lists, entities, ...',
             url: "https://www.youtube.com/watch?v=0QUgvfuKvWU",
-            reference: ['Csharp','ConsoleAPP']
+            reference: ['ConsoleAPP', 'Beginner']
         },
         {
-            vak: ['web'],
+            language: 'CSS',
             naam: 'CSS units : px , rem , em , vh , vw , ...',
             omschrijving: 'uitleg over CSS units',
             url: "https://www.youtube.com/watch?v=N5wpD9Ov_To",
-            reference: ['CSS','CSS units',]
+            reference: ['units','rem','em']
         },
 
     ],
-    myGidHubLinks : [
-        {
-            vak: ['Csharp'],
-            naam: '',
-            omschrijving: '',
-            url: "",
-            reference: ['Csharp','ConsoleAPP', 'WPF']
-    },
-        {
-        vak: ['web','JS','CSS'],
-        naam: '',
-        omschrijving: '',
-        url: "",
-        reference: ['CSS','JS', 'domi']
-    },],
 }]
 
-
-/// https://www.codewars.com/
 
 
 

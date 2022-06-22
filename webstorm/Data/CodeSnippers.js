@@ -58,7 +58,7 @@ private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs
     },
     {
             oplSem: 'Pro1Sem1',
-            reference: ['Window_Closing', 'closing', 'xaml', 'if-statement'],
+            reference: ['Window_Closing', 'closing', 'xaml', 'if-statement', 'if'],
             explanation: 'Window_Closing event met if-statement\n',
             comment:'wpf app',
             language: 'Csharp',
@@ -180,14 +180,11 @@ if (dialog.ShowDialog() == true)  // User clicks Open/Save
 `,
     },
 ]
-
-
-
 const codeSnipersJS = [
     {
         oplSem: 'Pro1Sem2',
         reference:['prompt','alert','message','Input'],
-        explanation: 'Input van gebruiker vragen via prompt(message , placeholder<br>)' +
+        explanation: 'Input van gebruiker vragen via prompt(message , placeholder)<br>' +
             'Message naar gebruiker via alert(message)',
         comment:'',
         language: 'javascript',
@@ -201,7 +198,7 @@ alert((naam === "Type hier uw naam" || naam === "") ? "U heeft niets ingevuld" :
     },
     {
         oplSem: 'Pro1Sem2',
-        reference:['string','werken met strings'],
+        reference:['string',''],
         explanation: 'werken met strings ',
         comment: '',
         language: 'javascript',
@@ -216,11 +213,11 @@ console.log(myGetal);                   // output : 3
         
         
 let zin = 'Dit is een zin';
-console.log(  zin.indexOf("e") );   // zegt op welke index de EERSTE 'e' staat
-                                            // output : 7
+console.log(  zin.indexOf("e") );     // zegt op welke index de EERSTE 'e' staat
+                                      // output : 7
         
-console.log(  zin.indexOf(" ", 4) );    // zegt op welke index de EERSTE specie staat vanaf index 4
-                                                // output: 6
+console.log(  zin.indexOf(" ", 4) );  // zegt op welke index de EERSTE specie staat vanaf index 4
+                                      // output: 6
                                                 
 let zin = "Ik wil een koekje";
 console.log(zin.length);                  // output: 17
@@ -236,7 +233,7 @@ console.log(zin.substring(10, 17));     // output: koekje
 let indexLaatsteSpace = zin.lastIndexOf(" ");                              // output: 10
 let laatsteLetter = zin.slice(zin.length - 1);                             // output: e
 let indexLaatsteLetter = zin.lastIndexOf(laatsteLetter);                   // output: 17
-console.log(zin.substring(indexLaatsteSpace, indexLaatsteLetter + 1));     // output: koekje`,
+console.log(zin.substring(indexLaatsteSpace, indexLaatsteLetter + 1));     // output: koekje2222`,
     },
     {
         oplSem: 'Pro1Sem2',
@@ -298,9 +295,6 @@ const currentSeconds = new Date().getSeconds();
     },
 
 ]
-
-
-
 const ConsoleLogJS = [
     {
         oplSem: 'Pro1Sem2',
@@ -387,6 +381,9 @@ const centerTheDiv =[
 }`,
     }
 ]
+
+
+
 
 
 const codeSnipers = codeSnipersJS.concat(codeSnipersCsharp).concat(ConsoleLogJS).concat(centerTheDiv)

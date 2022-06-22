@@ -3,12 +3,14 @@
 let select
 let indexCodeSnupers= ''
 let selectedLaguage;
+let thearrayofSnipers = [];
 let filterContainer = document.createElement('div')
 filterContainer.classList.add('filterContainer')
 window.onload = function (){
     createLaguageSelect()
     createSearchBar()
-    renderCodeSnipers(codeSnipers)
+    thearrayofSnipers = codeSnipers;
+    renderCodeSnipers()
 
     select.addEventListener('change', firststepLaguageSelect);
 }
@@ -48,15 +50,15 @@ function filterArrayByLaguageSelect() {
 
     selectedLaguage = document.getElementsByName('language')[0].value;
     if (selectedLaguage === 'alles') {
-        renderCodeSnipers(codeSnipers)
+        thearrayofSnipers = codeSnipers;
     }
     else {
-        renderCodeSnipers(codeSnipers.filter(snipper => {
+        thearrayofSnipers = codeSnipers.filter(snipper => {
             return snipper.language === selectedLaguage;
-        }))
+        })
 
     }
-
+    renderCodeSnipers()
 }
 
 
@@ -82,24 +84,24 @@ function firststepSearchBar(){
 }
 function filterArrayBySearchBar(i){
     let filtered = []
-       codeSnipers.filter(s => {
+    thearrayofSnipers.filter(s => {
            if (i === 'pro1sem1' || i === 'pro1sem2'){ if(s.oplSem.toLowerCase() === i) {filtered.push(s)}}
            else{
                s.reference.forEach(r => {
-                   if(r.toLowerCase() === i || r.toLowerCase().includes(i +' ') || r.toLowerCase().includes(' ' + i +' ') || r.toLowerCase().includes(' ' + i) ) {
+                   if(r.toLowerCase() === i) {
                        filtered.push(s)
                    }
                })
-
            }
        })
-    renderCodeSnipers(filtered)
+    thearrayofSnipers = filtered;
+    renderCodeSnipers()
 }
 
 
 
-function renderCodeSnipers(array){
-    array.forEach(sniper => {
+function renderCodeSnipers(){
+    thearrayofSnipers.forEach(sniper => {
   indexCodeSnupers += `
      <div class="codeSniperBox">
      <div class="codeSniperBox--innder">
@@ -112,11 +114,7 @@ function renderCodeSnipers(array){
     render()
 }
 
-//         reference:['string','werken met strings'],
-//         explanation: 'werken met strings ',
-//         comment: '',
-//         language: 'javascript',
-//         code: `
+
 
 
 
