@@ -1,10 +1,14 @@
 
 
+let linkContainer =  document.createElement('div');
+linkContainer.classList.add(('linkContainer'))
 
+main.appendChild(linkContainer)
 let index = '';
 window.onload = function (){
+    //createSearchBar()
     makeLinkCard();
-    renderLinks();
+
 }
 
 function makeLinkCard(){
@@ -25,14 +29,7 @@ function makeLinkCard(){
  </a>
  </div>
 </div>     
-    `  })
-
-
-}
-function renderLinks(){
-    let linkContainer =  document.createElement('div');
-    linkContainer.classList.add(('linkContainer'))
-    main.appendChild(linkContainer)
+    `})
     linkContainer.innerHTML = index
 
 }
