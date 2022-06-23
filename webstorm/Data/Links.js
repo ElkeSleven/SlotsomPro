@@ -5,7 +5,7 @@ languages: ['css','react','js','vue','sql', 'mongodb','csharp'],
 * */
 
 // learn play
-// development: 'backend frontend fullstack',  languages: ['json', 'csv', ],
+
 const awesomeLinks = [
         {
             development: 'frontend',
@@ -107,7 +107,7 @@ const awesomeLinks = [
         languages: ['js','vue','react'],
         group: 'YT-Channel',
         naam: 'Tyler Potts',
-        omschrijving: '',
+        omschrijving: 'maakt video\' over js , vue , react , ...',
         url: "https://www.youtube.com/c/TylerPotts",
         reference: []
     },
@@ -125,7 +125,7 @@ const awesomeLinks = [
             languages: ['css','html','js',],
             group: 'YT-Channel',
             naam: 'Web Dev Simplified',
-            omschrijving: '',
+            omschrijving: 'legt principes van js uit',
             url: "https://www.youtube.com/c/WebDevSimplified",
             reference: []
         },
@@ -134,7 +134,7 @@ const awesomeLinks = [
             languages: ['css','html','sass',],
             group: 'YT-Channel',
             naam: 'Kevin Powell',
-            omschrijving: '',
+            omschrijving: 'legt principes van Css en sass uit',
             url: "https://www.youtube.com/kepowob",
             reference: []
         },
@@ -202,15 +202,16 @@ const awesomeLinks = [
             omschrijving: 'uitleg over CSS units',
             url: "https://www.youtube.com/watch?v=N5wpD9Ov_To",
             reference: ['units','rem','em']
-        },{
+        },
+        {
         development: 'backend',
         languages: ['csharp'],
-        group: 'YT-Video',
+        group: 'YT-PlayList',
         naam: 'C# for Beginners to pro',
         omschrijving: 'uitleg over C# <br> van hello wold to linq en oop',
         url: "https://www.youtube.com/watch?v=BM4CHBmAPh4&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN",
         reference: ['linq', 'Pro1Sem1', 'Pro1Sem2']
-    }
+    },
 ]
 
 

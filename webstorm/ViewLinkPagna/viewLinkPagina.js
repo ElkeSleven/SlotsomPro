@@ -20,7 +20,7 @@ function makeLinkCard(){
  <a href="${link.url}">
     <div class="linkCard__link">
         <div>${link.naam}</div>
-        <div>${link.language}</div>
+        <div>${link.languages}</div>
     </div>
     <div class="linkCard__oms">
         <div>${link.omschrijving}</div>
