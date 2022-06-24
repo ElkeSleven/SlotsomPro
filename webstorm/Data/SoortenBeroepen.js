@@ -121,20 +121,6 @@ Bijkomende activiteit kan zijn: een team coördineren
 
 //////////////////////////////
 
-
-// Categorieen in programeren
-
-/*
- 1. Developer
-◦ Analist (business analist/ process analist / functioneel analist)
-◦ Ontwikkelaar (application engineer, …)
-◦ Tester
-
-
- 2. Systeem analist en Cybersecurity specialist
-* */
-
-
 // Profielen in IT development – software ontwikkeling:
 /*Analist
 ◦ Maakt een analyse van een probleem
