@@ -383,9 +383,34 @@ const centerTheDiv =[
 ]
 
 
+const higherOrderFunctions = [
+    {
+        oplSem: 'Pro1Sem2',
+        reference:['',],
+        explanation: '',
+        comment: '',
+        language: 'js',
+        code: ``,
+    },
+]
+
+array.filter(element => element > 4)
+array.filter((element) => { /* ... */ } )
+array.filter((element, index) => { /* ... */ } )
+array.filter((element, index, array) => { /* ... */ } )
+
+array.map((element) => { /* ... */ })
+array.map((element, index) => { /* ... */ })
+array.map((element, index, array) => { /* ... */ })
+
+array.reduce((previousValue, currentValue) => { /* ... */ } )
+array.reduce((previousValue, currentValue, currentIndex) => { /* ... */ } )
+array.reduce((previousValue, currentValue, currentIndex, array) => { /* ... */ } )
 
 
 
+
+const array = ['1','2','3','2','5']
 const codeSnipers = codeSnipersJS.concat(codeSnipersCsharp).concat(ConsoleLogJS).concat(centerTheDiv)
 
 
