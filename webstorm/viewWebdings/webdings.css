@@ -1,0 +1,23 @@
+*{
+  font-size: 2rem;
+}
+.webdings{
+    font-family: Webdings, serif;
+}
+.wingdings{
+    font-family: Wingdings, serif;
+}
+.wingdings2{
+    font-family: "Wingdings 2", serif;
+}
+.wingdings3{
+    font-family: "Wingdings 3", serif;
+}
+
+section div,
+section .webdings,
+section .wingdings,
+section .wingdings2,
+section .wingdings3{
+    display: flex;
+}

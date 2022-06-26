@@ -162,7 +162,7 @@ const awesomeLinks = [
             languages: ['csharp','js','html','css',],
             group: 'YT-Channel',
             naam: 'Bro Code',
-            omschrijving: 'tutorials,  data structure (no code)  , games in JS ',
+            omschrijving: 'tutorials,  data structure (no code)  , games in JS <br> https://www.mooict.com/c-tutorial-create-a-simple-platform-game-in-visual-studio/',
             url: "https://www.youtube.com/c/BroCodez",
             reference: []
         },
